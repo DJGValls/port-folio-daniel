@@ -3,11 +3,12 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaFilePdf } from "react-icons/fa";
 import CustomLinkButton from "../buttons/CustomLinkButton";
+import CustomNavbar from "../navbar/CustomNavbar";
 
 function CustomHeader() {
     return (
-        <header id="header" className="full-screen flex items-center">
-            {/* <Navbar /> */}
+        <header id="home" className="h-screen flex items-center justify-center relative">
+            <CustomNavbar />
 
             <div className="mt-14 max-w-xl lg:max-w-3xl px-4 container mx-auto flex flex-col  justify-center items-center absolute inset-0 text-center">
                 <Image
