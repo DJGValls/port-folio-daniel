@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { Inter } from "next/font/google";
+import CustomNavbar from "@/components/navbar/CustomNavbar";
+import CustomFooter from "@/components/footer/CustomFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +43,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <CustomNavbar />
+                <div className="pt-[100px] pb-[100px]">{children}</div>
+                <CustomFooter />
+            </body>
         </html>
     );
 }
