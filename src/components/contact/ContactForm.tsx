@@ -56,7 +56,7 @@ function ContactForm() {
 
     return (
         <FormControl
-        style={{width:'1000px'}}
+            style={{ width: "1000px" }}
             component="form"
             onSubmit={handleSubmit(onSubmit)}
             className="w-full flex flex-col space-y-6"
@@ -77,7 +77,7 @@ function ContactForm() {
                             borderColor: "rgba(253, 224, 71, 0.5)",
                         },
                         "&:hover fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.8)",
+                            borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
@@ -101,7 +101,7 @@ function ContactForm() {
                             borderColor: "rgba(253, 224, 71, 0.5)",
                         },
                         "&:hover fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.8)",
+                            borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
@@ -126,7 +126,7 @@ function ContactForm() {
                             borderColor: "rgba(253, 224, 71, 0.5)",
                         },
                         "&:hover fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.8)",
+                            borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
@@ -139,9 +139,11 @@ function ContactForm() {
                 variant="contained"
                 fullWidth
                 sx={{
-                    backgroundColor: "rgba(253, 224, 71, 0.5)",
+                    background: "linear-gradient(45deg, rgba(253, 224, 71, 0.5), var(--primary))",
+                    transition: "all 0.3s",
                     "&:hover": {
-                        backgroundColor: "rgba(253, 224, 71, 0.8)",
+                        transform: "translateY(-2px)",
+                        boxShadow: "0 4px 12px var(--primary-light)",
                     },
                     padding: "12px",
                     fontSize: "1rem",

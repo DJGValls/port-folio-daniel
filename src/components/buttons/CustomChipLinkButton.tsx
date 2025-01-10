@@ -38,7 +38,7 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
                 "& .MuiChip-icon": {
                     fontSize: "1.8rem", // Aumenta el tamaño del icono
                     marginRight: "5px", // Ajusta el margen del icono
-                    color: "rgba(253, 224, 71, 0.8)"
+                    color: "var(--primary)"
                 },
                 "& .MuiChip-label": {
                     padding: "0 12px", // Aumenta el padding del texto
@@ -46,8 +46,8 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
                 },
                 "&:hover": {
                     backgroundColor: "rgba(161, 98, 7, 0.6)",
-                    color: "rgba(253, 224, 71, 0.8)",
-                    borderColor: "rgba(253, 224, 71, 0.8)",
+                    color: "var(--primary)",
+                    borderColor: "var(--primary)",
                 },
             }}
         />

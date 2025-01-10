@@ -24,15 +24,15 @@ function CustomNavbar() {
                         sx={{
                             width: "100%",
                             height: "100px",
-                            backgroundColor: "rgba(0, 0, 0, 0.8)", // Fondo negro con transparencia
+                            backgroundColor: "var(--background)", // Fondo negro con transparencia
                             backdropFilter: "blur(8px)", // Efecto de difuminado
                             "& .MuiBottomNavigationAction-root": {
                                 color: "#CBD5E1",
                                 "&:hover": {
-                                    color: "rgba(253, 224, 71, 0.8)",
+                                    color: "var(--primary)",
                                 },
                                 "&.Mui-selected": {
-                                    color: "rgba(253, 224, 71, 0.8)",
+                                    color: "var(--primary)",
                                 },
                                 "& .MuiBottomNavigationAction-label": {
                                     fontSize: "1rem",
