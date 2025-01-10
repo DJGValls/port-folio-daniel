@@ -6,11 +6,24 @@ export const IntratimeEmpresa = () => {
     const itemData = [
         // primera fila
         {
+            img: "/intratimeEmpresa/singin.png",
+            title: "Proyecto 1",
+            rows: 1,
+            cols: 1,
+        },
+        {
             img: "/intratimeEmpresa/login.png",
             title: "Proyecto 1",
             rows: 2,
-            cols: 4,
+            cols: 3,
         },
+        {
+            img: "/intratimeEmpresa/resetPass.png",
+            title: "Proyecto 1",
+            rows: 1,
+            cols: 1,
+        },
+
         // segunda fila
         {
             img: "/intratimeEmpresa/clockings.png",
@@ -19,11 +32,12 @@ export const IntratimeEmpresa = () => {
             cols: 2,
         },
         {
-            img: "/intratimeEmpresa/historic.png",
+            img: "/intratimeEmpresa/employeeCalendar.png",
             title: "Proyecto 1",
             rows: 1,
             cols: 2,
         },
+
         // tercera fila
         {
             img: "/intratimeEmpresa/calendar.png",
@@ -32,10 +46,24 @@ export const IntratimeEmpresa = () => {
             cols: 3,
         },
         {
-            img: "/intratimeEmpresa/calendarlenguaje.png",
+            img: "/intratimeEmpresa/sidevar.png",
             title: "Proyecto 1",
             rows: 2,
             cols: 1,
+        },
+
+        // cuarta fila
+        {
+            img: "/intratimeEmpresa/employeeAbsences.png",
+            title: "Proyecto 1",
+            rows: 2,
+            cols: 2,
+        },
+        {
+            img: "/intratimeEmpresa/clockingsByemployee.png",
+            title: "Proyecto 1",
+            rows: 2,
+            cols: 2,
         },
     ];
     return (
@@ -67,11 +95,11 @@ export const IntratimeEmpresa = () => {
 
                         <div className="space-y-4">
                             <p>
-                                Participé activamente en el desarrollo de esta aplicación mientras trabajaba en Winworld. Intratime Empresa es una
-                                aplicación web desarrollada con Laravel que revoluciona la gestión de recursos humanos y
-                                el control de fichajes desde el punto de vista empresarial. Esta solución integral
-                                permite a las empresas gestionar eficientemente sus empleados, horarios, permisos y
-                                generar informes detallados.
+                                Participé activamente en el desarrollo de esta aplicación mientras trabajaba en
+                                Winworld. Intratime Empresa es una aplicación web desarrollada con Laravel que
+                                revoluciona la gestión de recursos humanos y el control de fichajes desde el punto de
+                                vista empresarial. Esta solución integral permite a las empresas gestionar
+                                eficientemente sus empleados, horarios, permisos y generar informes detallados.
                             </p>
 
                             <p>
@@ -107,7 +135,6 @@ export const IntratimeEmpresa = () => {
                                 <li>Funcionalidades extendidas de fichajes</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
