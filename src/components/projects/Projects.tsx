@@ -1,6 +1,9 @@
 import { CustomCard } from "../cards/CustomCard";
+import { FactokisProject } from "./factokis/FactokisProject";
+import { FutAlinerProject } from "./futAliner/FutAlinerProject";
 import { IntratimeEmpleadoProject } from "./intratimeEmpleado/IntratimeEmpleadoProject";
 import { IntratimeEmpresa } from "./intratimeEmpresa/IntratimeEmpresa";
+import { PortfolioProject } from "./myPortFolio/PortfolioProject";
 import { VilacasasProject } from "./vilacasas/VilacasasProject";
 
 function Projects() {
@@ -16,13 +19,13 @@ function Projects() {
                 <IntratimeEmpresa />
             </CustomCard>
             <CustomCard title="" id="factokis">
-                <VilacasasProject />
+                <FactokisProject />
             </CustomCard>
             <CustomCard title="" id="futaliner">
-                <VilacasasProject />
+                <FutAlinerProject />
             </CustomCard>
             <CustomCard title="" id="portfolio">
-                <VilacasasProject />
+                <PortfolioProject />
             </CustomCard>
         </>
     );

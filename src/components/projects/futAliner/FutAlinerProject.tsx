@@ -2,51 +2,48 @@ import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
 
-export const IntratimeEmpleadoProject = () => {
+export const FutAlinerProject = () => {
     const itemData = [
-        // primera fila
         {
-            img: "/intratimeEmpleado/login.png",
-            title: "Proyecto 1",
+            img: "/futaliner/dashboard.png",
+            title: "Dashboard",
             rows: 2,
             cols: 4,
         },
-        // segunda fila
         {
-            img: "/intratimeEmpleado/clockings.png",
-            title: "Proyecto 2",
+            img: "/futaliner/teams.png",
+            title: "Equipos",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/intratimeEmpleado/historic.png",
-            title: "Proyecto 1",
+            img: "/futaliner/players.png",
+            title: "Jugadores",
             rows: 1,
             cols: 2,
         },
-        // tercera fila
         {
-            img: "/intratimeEmpleado/calendar.png",
-            title: "Proyecto 1",
+            img: "/futaliner/matchmaker.png",
+            title: "Generador",
             rows: 2,
             cols: 3,
         },
         {
-            img: "/intratimeEmpleado/calendarlenguaje.png",
-            title: "Proyecto 1",
+            img: "/futaliner/stats.png",
+            title: "Estadísticas",
             rows: 2,
             cols: 1,
         },
     ];
+
     return (
         <>
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
                     <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
-                        <span>Intratime Empleado</span>
+                        <span>FutAliner - Gestor de Equipos de Fútbol</span>
                         <IconButton
-                            key="intratimeEmpleado"
-                            href="https://intratimev3pro-panelempleado.azurewebsites.net/"
+                            href="https://futaliner.netlify.app/"
                             target="_blank"
                             sx={{
                                 color: "#CBD5E1",
@@ -61,44 +58,43 @@ export const IntratimeEmpleadoProject = () => {
                     <div className="space-y-6">
                         <div>
                             <h3 className="text-lg text-bunker-300">
-                                Sistema de Control de Fichajes y Gestión de RRHH
+                                Sistema Inteligente de Gestión de Equipos de Fútbol
                             </h3>
                         </div>
 
                         <div className="space-y-4">
                             <p>
-                                Desarrollé esta aplicación mientras trabajaba en Winworld. Intratime Empleado es una
-                                aplicación web desarrollada con Next.js que revoluciona la gestión de recursos humanos y
-                                el control de fichajes. Esta solución integral permite a los empleados gestionar su
-                                jornada laboral de forma eficiente y transparente, mientras proporciona a las empresas
-                                un control preciso del tiempo trabajado.
+                                FutAliner es una aplicación web innovadora diseñada para revolucionar la generación de alineaciones de equipos de fútbol amateur. 
+                                Desarrollada con React y Node.js, ofrece una solución integral para la organización de equipos y la generación 
+                                automática de alineaciones equilibradas.
                             </p>
 
-                            <p>
-                                La aplicación destaca por su sistema de autenticación robusto con login mediante email y
-                                PIN, respaldado por tokens JWT. Los empleados pueden registrar sus entradas, salidas y
-                                pausas, con soporte para teletrabajo y geolocalización. Además, integra un completo
-                                sistema de gestión documental para nóminas y gastos.
-                            </p>
+                            <h6 className="font-medium text-yellow-300/80">Características Principales:</h6>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>Sistema de autenticación seguro con JWT</li>
+                                <li>Gestión completa de equipos y jugadores</li>
+                                <li>Sistema de valoración de habilidades por categorías</li>
+                                <li>Algoritmo inteligente de generación de alineaciones</li>
+                                <li>Gestión de roles (capitán/jugador)</li>
+                            </ul>
 
-                            <p>
-                                Este proyecto ha transformado la manera en que las empresas gestionan sus recursos
-                                humanos, simplificando procesos administrativos y mejorando la eficiencia en el control
-                                de personal. La implementación de tecnologías modernas garantiza una experiencia fluida
-                                y segura para todos los usuarios.
-                            </p>
-                        </div>
+                            <h6 className="font-medium text-yellow-300/80">Sistema de Valoraciones:</h6>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>Evaluación de habilidades específicas</li>
+                                <li>Cálculo automático de medias</li>
+                                <li>Histórico de evolución del jugador</li>
+                            </ul>
 
-                        <div>
                             <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
                             <div className="flex flex-wrap gap-2">
                                 {[
-                                    "Next.js",
-                                    "TypeScript",
-                                    "JWT Authentication",
-                                    "Material-UI",
-                                    "Geolocation API",
-                                    "REST API",
+                                    "React",
+                                    "Node.js",
+                                    "Express",
+                                    "MongoDB",
+                                    "JWT",
+                                    "React Bootstrap",
+                                    "Cloudinary"
                                 ].map((tech, index) => (
                                     <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
                                         {tech}

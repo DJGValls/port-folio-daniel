@@ -134,6 +134,23 @@ export const IntratimeEmpresa = () => {
                                 <li>Reportes personalizados</li>
                                 <li>Funcionalidades extendidas de fichajes</li>
                             </ul>
+
+                            <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
+                            <div className="flex flex-wrap gap-2">
+                                {[
+                                    "PHP",
+                                    "Laravel 10",
+                                    "Livewire",
+                                    "Alpine.Js",
+                                    "API - PHP",
+                                    "API - Laravel",
+                                    "DB- MySQL",
+                                ].map((tech, index) => (
+                                    <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
