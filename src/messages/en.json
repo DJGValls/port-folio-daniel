@@ -1,0 +1,7 @@
+{
+    "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "Web portfolio developed with Next.js and TypeScript",
+        "technologies": "Technologies used"
+    }
+}

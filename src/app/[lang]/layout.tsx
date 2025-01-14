@@ -3,6 +3,8 @@ import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import CustomNavbar from "@/components/navbar/CustomNavbar";
 import CustomFooter from "@/components/footer/CustomFooter";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,13 +42,38 @@ export const metadata: Metadata = {
     },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const locales = ['cat', 'es', 'en'];
+
+export function generateStaticParams() {
+    return locales.map((locale) => ({ lang: locale }));
+}
+
+async function getMessages(locale: string) {
+    try {
+        return (await import(`../../../messages/${locale}.json`)).default;
+    } catch (error) {
+        notFound();
+    }
+}
+
+export default async function RootLayout({
+    children,
+    params: { lang },
+}: {
+    children: React.ReactNode;
+    params: { lang: string };
+}) {
+    if (!locales.includes(lang)) notFound();
+
+    const messages = await getMessages(lang);
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang={lang} className="scroll-smooth">
             <body className={inter.className}>
-                <CustomNavbar />
-                <div className="pt-[100px] pb-[100px]">{children}</div>
-                <CustomFooter />
+                <NextIntlClientProvider locale={lang} messages={messages}>
+                    <CustomNavbar />
+                    <div className="pt-[100px] pb-[100px]">{children}</div>
+                    <CustomFooter />
+                </NextIntlClientProvider>
             </body>
         </html>
     );

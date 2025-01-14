@@ -6,6 +6,13 @@
 .pnp.js
 .yarn/install-state.gz
 
+# imagenes de proyectos
+/public/factokis
+/public/futaliner
+/public/intratimeEmpleado
+/public/intratimeEmpresa
+/public/vilacasas
+
 # testing
 /coverage
 

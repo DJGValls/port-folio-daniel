@@ -23,16 +23,16 @@ export const FactokisProject = () => {
             cols: 2,
         },
         {
-            img: "/factokis/contactos.png",
-            title: "Contactos",
-            rows: 2,
-            cols: 3,
-        },
-        {
             img: "/factokis/configuracion.png",
             title: "Configuración",
             rows: 2,
-            cols: 1,
+            cols: 2,
+        },
+        {
+            img: "/factokis/contactos.png",
+            title: "Contactos",
+            rows: 2,
+            cols: 2,
         },
     ];
 

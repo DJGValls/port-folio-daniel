@@ -4,16 +4,18 @@ import CustomChipLinkButton from "../buttons/CustomChipLinkButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ListAltIcon from "@mui/icons-material/ListAlt";
+import { useTranslations } from "next-intl";
 
 function CustomHome() {
+    const t = useTranslations('portfolio');
     return (
             <div className="max-w-xl lg:max-w-3xl px-4 container mx-auto flex flex-col  justify-center items-center absolute inset-0 text-center">
                 <Image
-                    src="/gato.jpeg"
+                    src="/me.jpeg"
                     alt="logo"
                     width={300}
                     height={300}
-                    className="rounded-full mb-8 h-48 lg:h-60 w-auto"
+                    className="rounded-full mb-8 h-48 lg:h-56 w-56"
                 />
 
                 <h1 className="mb-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-bunker-100">

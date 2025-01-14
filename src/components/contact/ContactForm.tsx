@@ -56,7 +56,6 @@ function ContactForm() {
 
     return (
         <FormControl
-            style={{ width: "1000px" }}
             component="form"
             onSubmit={handleSubmit(onSubmit)}
             className="w-full flex flex-col space-y-6"
@@ -74,14 +73,23 @@ function ContactForm() {
                     "& .MuiOutlinedInput-root": {
                         color: "white",
                         "& fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.5)",
+                            borderColor: "rgba(253, 224, 71, 0.5)", // --primary con opacidad
                         },
                         "&:hover fieldset": {
+                            borderColor: "var(--primary)",
+                        },
+                        "&.Mui-focused fieldset": {
                             borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
                         color: "white",
+                        "&.Mui-focused": {
+                            color: "var(--primary)", // Utilizará el color amarillo definido en globals.css
+                        },
+                    },
+                    "& .MuiFormHelperText-root": {
+                        color: "var(--primary)",
                     },
                 }}
             />
@@ -98,14 +106,23 @@ function ContactForm() {
                     "& .MuiOutlinedInput-root": {
                         color: "white",
                         "& fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.5)",
+                            borderColor: "rgba(253, 224, 71, 0.5)", // --primary con opacidad
                         },
                         "&:hover fieldset": {
+                            borderColor: "var(--primary)",
+                        },
+                        "&.Mui-focused fieldset": {
                             borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
                         color: "white",
+                        "&.Mui-focused": {
+                            color: "var(--primary)", // Utilizará el color amarillo definido en globals.css
+                        },
+                    },
+                    "& .MuiFormHelperText-root": {
+                        color: "var(--primary)",
                     },
                 }}
             />
@@ -123,14 +140,23 @@ function ContactForm() {
                     "& .MuiOutlinedInput-root": {
                         color: "white",
                         "& fieldset": {
-                            borderColor: "rgba(253, 224, 71, 0.5)",
+                            borderColor: "rgba(253, 224, 71, 0.5)", // --primary con opacidad
                         },
                         "&:hover fieldset": {
+                            borderColor: "var(--primary)",
+                        },
+                        "&.Mui-focused fieldset": {
                             borderColor: "var(--primary)",
                         },
                     },
                     "& .MuiInputLabel-root": {
                         color: "white",
+                        "&.Mui-focused": {
+                            color: "var(--primary)", // Utilizará el color amarillo definido en globals.css
+                        },
+                    },
+                    "& .MuiFormHelperText-root": {
+                        color: "var(--primary)",
                     },
                 }}
             />

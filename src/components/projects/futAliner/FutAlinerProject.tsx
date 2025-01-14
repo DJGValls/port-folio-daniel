@@ -64,9 +64,13 @@ export const FutAlinerProject = () => {
 
                         <div className="space-y-4">
                             <p>
-                                FutAliner es una aplicación web innovadora diseñada para revolucionar la generación de alineaciones de equipos de fútbol amateur. 
-                                Desarrollada con React y Node.js, ofrece una solución integral para la organización de equipos y la generación 
-                                automática de alineaciones equilibradas.
+                                FutAliner es mi primera aplicación en la que puse en práctica todo mi aprendizaje y mi
+                                inventiva. Es una aplicación web innovadora diseñada para revolucionar la generación de
+                                alineaciones de equipos de fútbol amateur. Desarrollada con React y Node.js, ofrece una
+                                solución integral para la organización de equipos y la generación automática de
+                                alineaciones equilibradas. Lamentablemente, no está disponible en la web por motivos de
+                                pago. La aplicación está disponible en mi GitHub y puede ser utilizada para su
+                                visualización.
                             </p>
 
                             <h6 className="font-medium text-yellow-300/80">Características Principales:</h6>
@@ -87,19 +91,13 @@ export const FutAlinerProject = () => {
 
                             <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
                             <div className="flex flex-wrap gap-2">
-                                {[
-                                    "React",
-                                    "Node.js",
-                                    "Express",
-                                    "MongoDB",
-                                    "JWT",
-                                    "React Bootstrap",
-                                    "Cloudinary"
-                                ].map((tech, index) => (
-                                    <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
-                                        {tech}
-                                    </span>
-                                ))}
+                                {["React", "Node.js", "Express", "MongoDB", "JWT", "React Bootstrap", "Cloudinary"].map(
+                                    (tech, index) => (
+                                        <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
+                                            {tech}
+                                        </span>
+                                    )
+                                )}
                             </div>
                         </div>
                     </div>
