@@ -50,7 +50,7 @@ export function generateStaticParams() {
 
 async function getMessages(locale: string) {
     try {
-        return (await import(`../../../messages/${locale}.json`)).default;
+        return (await import(`@/messages/${locale}.json`)).default;
     } catch (error) {
         notFound();
     }
@@ -70,7 +70,7 @@ export default async function RootLayout({
         <html lang={lang} className="scroll-smooth">
             <body className={inter.className}>
                 <NextIntlClientProvider locale={lang} messages={messages}>
-                    <CustomNavbar />
+                    <CustomNavbar lang={lang}/>
                     <div className="pt-[100px] pb-[100px]">{children}</div>
                     <CustomFooter />
                 </NextIntlClientProvider>

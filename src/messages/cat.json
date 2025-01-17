@@ -3,5 +3,10 @@
         "title": "Portafoli Personal",
         "description": "Portafoli web desenvolupat amb Next.js i TypeScript",
         "technologies": "Tecnologies utilitzades"
+    },
+    "home": {
+        "textInfoPosition": "Desenvolupador Web Full-Stack amb",
+        "textInfoExperience": "+3 anys d'experiència.",
+        "textInfoResume": "Apassionat per la programació i l'aprenentatge."
     }
 }

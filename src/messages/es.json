@@ -3,5 +3,10 @@
         "title": "Portfolio Personal",
         "description": "Portfolio web desarrollado con Next.js y TypeScript",
         "technologies": "Tecnologías utilizadas"
+    },
+    "home": {
+        "textInfoPosition": "Desarrollador Web Full-Stack con",
+        "textInfoExperience": "+3 años de experiencia.",
+        "textInfoResume": "Amante de la programación y el aprendizaje."
     }
 }

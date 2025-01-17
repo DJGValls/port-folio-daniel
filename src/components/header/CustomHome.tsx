@@ -7,7 +7,7 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import { useTranslations } from "next-intl";
 
 function CustomHome() {
-    const t = useTranslations('portfolio');
+    const t = useTranslations(`home`);
     return (
             <div className="max-w-xl lg:max-w-3xl px-4 container mx-auto flex flex-col  justify-center items-center absolute inset-0 text-center">
                 <Image
@@ -23,9 +23,8 @@ function CustomHome() {
                 </h1>
 
                 <p className="text-bunker-300 text-lg md:text-xl lg:text-2xl">
-                    Desarrollador Web Full-Stack con
-                    <span className="text-yellow-300/80 "> +3 años de experiencia.</span> Amante de la programación y el
-                    aprendizaje.
+                    {t("textInfoPosition")}
+                    <span className="text-yellow-300/80 "> {t("textInfoExperience")}</span> {t("textInfoResume")}
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-3 mt-8">

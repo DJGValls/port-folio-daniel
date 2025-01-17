@@ -3,7 +3,7 @@ import createMiddleware from 'next-intl/middleware';
 import { CustomMiddleware, MiddlewareFactory } from "./chain";
 
 export const locales = ['cat', 'es', 'en'];
-export const defaultLocale = 'cat';
+export const defaultLocale = 'en';
 
 export const i18nMiddleware = createMiddleware({
     // A list of all locales that are supported
