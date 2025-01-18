@@ -11,6 +11,7 @@ import { getMessages } from "next-intl/server";
 import TransitionLayout from "@/components/transitions/TransitionLayout";
 import TransitionHeader from "@/components/transitions/TransitionHeader";
 import TransitionFooter from "@/components/transitions/TransitionFooter";
+import { DeserParticlesBackground } from "@/components/background/DesertWindParticlesBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,6 +62,7 @@ export default async function RootLayout({
     return (
         <html lang={lang} className="scroll-smooth">
             <body className={inter.className}>
+                    <DeserParticlesBackground />
                 <NextIntlClientProvider locale={lang} messages={messages}>
                     <TransitionHeader>
                         <CustomNavbar lang={lang} />
