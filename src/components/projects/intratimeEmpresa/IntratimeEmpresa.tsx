@@ -1,66 +1,81 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import singinImage from '/public/intratimeEmpresa/singin.png';
+import loginImage from '/public/intratimeEmpresa/login.png';
+import resetPassImage from '/public/intratimeEmpresa/resetPass.png';
+import clockingsImage from '/public/intratimeEmpresa/clockings.png';
+import employeeCalendarImage from '/public/intratimeEmpresa/employeeCalendar.png';
+import calendarImage from '/public/intratimeEmpresa/calendar.png';
+import sidevarImage from '/public/intratimeEmpresa/sidevar.png';
+import employeeAbsencesImage from '/public/intratimeEmpresa/employeeAbsences.png';
+import clockingsByemployeeImage from '/public/intratimeEmpresa/clockingsByemployee.png';
 
 export const IntratimeEmpresa = () => {
     const itemData = [
         // primera fila
         {
-            img: "/intratimeEmpresa/singin.png",
+            id: 1,
+            img: singinImage,
             title: "Proyecto 1",
             rows: 1,
             cols: 1,
         },
         {
-            img: "/intratimeEmpresa/login.png",
+            id: 2,
+            img: loginImage,
             title: "Proyecto 1",
             rows: 2,
             cols: 3,
         },
         {
-            img: "/intratimeEmpresa/resetPass.png",
+            id: 3,
+            img: resetPassImage,
             title: "Proyecto 1",
             rows: 1,
             cols: 1,
         },
-
         // segunda fila
         {
-            img: "/intratimeEmpresa/clockings.png",
+            id: 4,
+            img: clockingsImage,
             title: "Proyecto 2",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/intratimeEmpresa/employeeCalendar.png",
+            id: 5,
+            img: employeeCalendarImage,
             title: "Proyecto 1",
             rows: 1,
             cols: 2,
         },
-
         // tercera fila
         {
-            img: "/intratimeEmpresa/calendar.png",
+            id: 6,
+            img: calendarImage,
             title: "Proyecto 1",
             rows: 2,
             cols: 3,
         },
         {
-            img: "/intratimeEmpresa/sidevar.png",
+            id: 7,
+            img: sidevarImage,
             title: "Proyecto 1",
             rows: 2,
             cols: 1,
         },
-
         // cuarta fila
         {
-            img: "/intratimeEmpresa/employeeAbsences.png",
+            id: 8,
+            img: employeeAbsencesImage,
             title: "Proyecto 1",
             rows: 2,
             cols: 2,
         },
         {
-            img: "/intratimeEmpresa/clockingsByemployee.png",
+            id: 9,
+            img: clockingsByemployeeImage,
             title: "Proyecto 1",
             rows: 2,
             cols: 2,
@@ -159,7 +174,7 @@ export const IntratimeEmpresa = () => {
                 <div className="rounded-xl overflow-hidden">
                     <ImageList variant="quilted" cols={4} rowHeight={121}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                            <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                                 <Image
                                     src={item.img}
                                     alt={item.title}

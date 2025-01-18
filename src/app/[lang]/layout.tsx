@@ -5,6 +5,12 @@ import CustomNavbar from "@/components/navbar/CustomNavbar";
 import CustomFooter from "@/components/footer/CustomFooter";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import { locales } from "../../../middlewares/locale.middleware";
+import { routing } from "../../../i18n/routing";
+import { getMessages } from "next-intl/server";
+import TransitionLayout from "@/components/transitions/TransitionLayout";
+import TransitionHeader from "@/components/transitions/TransitionHeader";
+import TransitionFooter from "@/components/transitions/TransitionFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,20 +48,6 @@ export const metadata: Metadata = {
     },
 };
 
-export const locales = ['cat', 'es', 'en'];
-
-export function generateStaticParams() {
-    return locales.map((locale) => ({ lang: locale }));
-}
-
-async function getMessages(locale: string) {
-    try {
-        return (await import(`@/messages/${locale}.json`)).default;
-    } catch (error) {
-        notFound();
-    }
-}
-
 export default async function RootLayout({
     children,
     params: { lang },
@@ -65,14 +57,18 @@ export default async function RootLayout({
 }) {
     if (!locales.includes(lang)) notFound();
 
-    const messages = await getMessages(lang);
+    const messages = await getMessages();
     return (
         <html lang={lang} className="scroll-smooth">
             <body className={inter.className}>
                 <NextIntlClientProvider locale={lang} messages={messages}>
-                    <CustomNavbar lang={lang}/>
+                    <TransitionHeader>
+                        <CustomNavbar lang={lang} />
+                    </TransitionHeader>
                     <div className="pt-[100px] pb-[100px]">{children}</div>
-                    <CustomFooter />
+                    <TransitionFooter>
+                        <CustomFooter />
+                    </TransitionFooter>
                 </NextIntlClientProvider>
             </body>
         </html>

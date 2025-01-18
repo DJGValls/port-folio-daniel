@@ -1,12 +1,13 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import loginImage from '/public/vilacasas/login.png';
 
 export const VilacasasProject = () => {
     const itemData = [
-        // primera fila
         {
-            img: "/vilacasas/login.png",
+            id: 1,
+            img: loginImage,
             title: "Proyecto 1",
             rows: 3,
             cols: 4,
@@ -83,7 +84,7 @@ export const VilacasasProject = () => {
                 <div className="rounded-xl overflow-hidden">
                     <ImageList variant="quilted" cols={4} rowHeight={121}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                            <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                                 <Image
                                     src={item.img}
                                     alt={item.title}

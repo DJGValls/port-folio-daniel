@@ -1,35 +1,45 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import dashboardImage from '/public/factokis/dashboard.png'
+import facturasImage from '/public/factokis/facturas.png'
+import contabilidadImage from '/public/factokis/contabilidad.png'
+import configuracionImage from '/public/factokis/configuracion.png'
+import contactosImage from '/public/factokis/contactos.png'
 
 export const FactokisProject = () => {
     const itemData = [
         {
-            img: "/factokis/dashboard.png",
+            id: 1,
+            img: dashboardImage,
             title: "Dashboard",
             rows: 2,
             cols: 4,
         },
         {
-            img: "/factokis/facturas.png",
-            title: "Facturas",
+            id: 2,
+            img: facturasImage,
+            title: "Facturas", 
             rows: 1,
             cols: 2,
         },
         {
-            img: "/factokis/contabilidad.png",
+            id: 3,
+            img: contabilidadImage,
             title: "Contabilidad",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/factokis/configuracion.png",
+            id: 4,
+            img: configuracionImage,
             title: "Configuración",
             rows: 2,
             cols: 2,
         },
         {
-            img: "/factokis/contactos.png",
+            id: 5,
+            img: contactosImage,
             title: "Contactos",
             rows: 2,
             cols: 2,
@@ -115,7 +125,7 @@ export const FactokisProject = () => {
                 <div className="rounded-xl overflow-hidden">
                     <ImageList variant="quilted" cols={4} rowHeight={121}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                            <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                                 <Image
                                     src={item.img}
                                     alt={item.title}

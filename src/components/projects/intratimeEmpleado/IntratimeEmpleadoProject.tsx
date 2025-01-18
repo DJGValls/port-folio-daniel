@@ -1,39 +1,49 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import loginImage from "/public/intratimeEmpleado/login.png";
+import clockingsImage from "/public/intratimeEmpleado/clockings.png";
+import historicImage from "/public/intratimeEmpleado/historic.png";
+import calendarImage from "/public/intratimeEmpleado/calendar.png";
+import calendarlenguajeImage from "/public/intratimeEmpleado/calendarlenguaje.png";
 
 export const IntratimeEmpleadoProject = () => {
     const itemData = [
         // primera fila
         {
-            img: "/intratimeEmpleado/login.png",
-            title: "Proyecto 1",
+            id: 1,
+            img: loginImage,
+            title: "Login",
             rows: 2,
             cols: 4,
         },
         // segunda fila
         {
-            img: "/intratimeEmpleado/clockings.png",
-            title: "Proyecto 2",
+            id: 2,
+            img: clockingsImage,
+            title: "Fichajes",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/intratimeEmpleado/historic.png",
-            title: "Proyecto 1",
+            id: 3,
+            img: historicImage,
+            title: "Histórico",
             rows: 1,
             cols: 2,
         },
         // tercera fila
         {
-            img: "/intratimeEmpleado/calendar.png",
-            title: "Proyecto 1",
+            id: 4,
+            img: calendarImage,
+            title: "Calendario",
             rows: 2,
             cols: 3,
         },
         {
-            img: "/intratimeEmpleado/calendarlenguaje.png",
-            title: "Proyecto 1",
+            id: 5,
+            img: calendarlenguajeImage,
+            title: "Idiomas",
             rows: 2,
             cols: 1,
         },
@@ -113,7 +123,7 @@ export const IntratimeEmpleadoProject = () => {
                 <div className="rounded-xl overflow-hidden">
                     <ImageList variant="quilted" cols={4} rowHeight={121}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                            <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                                 <Image
                                     src={item.img}
                                     alt={item.title}

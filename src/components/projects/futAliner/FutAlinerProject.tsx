@@ -1,35 +1,45 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import dashboardImage from "/public/futaliner/dashboard.png";
+import teamsImage from "/public/futaliner/teams.png";
+import playersImage from "/public/futaliner/players.png";
+import matchmakerImage from "/public/futaliner/matchmaker.png";
+import statsImage from "/public/futaliner/stats.png";
 
 export const FutAlinerProject = () => {
     const itemData = [
         {
-            img: "/futaliner/dashboard.png",
+            id: 1,
+            img: dashboardImage,
             title: "Dashboard",
             rows: 2,
             cols: 4,
         },
         {
-            img: "/futaliner/teams.png",
+            id: 2,
+            img: teamsImage,
             title: "Equipos",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/futaliner/players.png",
+            id: 3,
+            img: playersImage,
             title: "Jugadores",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/futaliner/matchmaker.png",
+            id: 4,
+            img: matchmakerImage,
             title: "Generador",
             rows: 2,
             cols: 3,
         },
         {
-            img: "/futaliner/stats.png",
+            id: 5,
+            img: statsImage,
             title: "Estadísticas",
             rows: 2,
             cols: 1,
@@ -107,7 +117,7 @@ export const FutAlinerProject = () => {
                 <div className="rounded-xl overflow-hidden">
                     <ImageList variant="quilted" cols={4} rowHeight={121}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                            <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                                 <Image
                                     src={item.img}
                                     alt={item.title}

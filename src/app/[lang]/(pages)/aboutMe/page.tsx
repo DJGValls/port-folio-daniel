@@ -1,8 +1,10 @@
 import AboutMe from "@/components/aboutMe/AboutMe";
-
+import TransitionLayout from "@/components/transitions/TransitionLayout";
 
 export default function AboutMePage() {
-  return (
-    <AboutMe />
-  )
+    return (
+        <TransitionLayout>
+            <AboutMe />
+        </TransitionLayout>
+    );
 }
