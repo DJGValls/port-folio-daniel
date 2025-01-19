@@ -4,9 +4,115 @@
         "description": "Portafoli web desenvolupat amb Next.js i TypeScript",
         "technologies": "Tecnologies utilitzades"
     },
+    "navbar": {
+        "home": "Inici",
+        "about": "Sobre mi",
+        "projects": "Projectes",
+        "contact": "Contactes"
+    },
+    "footer": {
+        "footerText": "© 2025 Tots els drets reservats"
+    },
     "home": {
         "textInfoPosition": "Desenvolupador Web Full-Stack amb",
         "textInfoExperience": "+3 anys d'experiència.",
         "textInfoResume": "Apassionat per la programació i l'aprenentatge."
+    },
+    "aboutMe": {
+        "title": "Sobre mi",
+        "text1": "Soc un desenvolupador web full-stack apassionat per crear solucions web efectives i accessibles. Em especialitzo en tecnologies com HTML, CSS, JavaScript, TypeScript, Php, React, Next.js, Laravel, Blade, Livewire, AlpineJs, Tailwind, Bootstrap, treballant tant en el front-end com en el back-end per desenvolupar aplicacions completes.",
+        "text2": "La meva experiència no es limita només a la web; també desenvolupo aplicacions mòbils multiplataforma utilitzant React Native, la qual cosa em permet crear solucions que funcionen tant en iOS com en Android mantenint una base de codi única i eficient.",
+        "linkText": "En els meus projectes",
+        "text3": "podràs trobar exemples d'interfícies pensades per a l'usuari, on combino disseny i funcionalitat. Al costat del servidor, treballo amb Node.js, Express, Php i Laravel, enfocant-me en crear aplicacions segures i mantenibles.",
+        "text4": "M'encanta aprendre i mantenir-me al dia amb les noves tecnologies i millors pràctiques del desenvolupament web i mòbil. Gaudeixo col·laborant en equip i afrontant nous reptes que em permetin seguir creixent com a desenvolupador. Sempre busco aportar solucions pràctiques i eficients en cada projecte."
+    },
+    "projects": {
+        "title": "Projectes",
+        "vilacasas": {
+            "title": "Intrawin Fundació Vilacasas",
+            "text1": "Vaig desenvolupar aquesta aplicació de gestió financera empresarial mentre treballava a Winworld. És una intranet completa que integra la gestió de pressupostos i tresoreria, proporcionant eines eficients per al control financer i la presa de decisions. L'aplicació està construïda amb una arquitectura moderna fent servir Next.js i TypeScript per al frontend, mentre que el backend utilitza PHP amb Laravel i MySQL.",
+            "subTitle1": "Gestió Pressupostària",
+            "subTitle1-point1": "Editor de pressupostos amb funcionalitat drag & drop",
+            "subTitle1-point2": "Organització jeràrquica en tres nivells per a millor control",
+            "subTitle1-point3": "Sistema intuïtiu de creació i edició de plantilles",
+            "subTitle2": "Control Financer",
+            "subTitle2-point1": "Informes detallats en format PDF",
+            "subTitle2-point2": "Quadre de comandament d'inversions i tresoreria",
+            "subTitle2-point3": "Sistema d'exportació i distribució d'informes",
+            "subTitle3": "Aspectes Tècnics",
+            "subTitle3-point1": "Disseny modular per a fàcil manteniment i escalabilitat",
+            "subTitle3-point2": "Suport multilingüe (ES/CAT/EN)",
+            "subTitle3-point3": "Sistema de rols i permisos personalitzat",
+            "subTitle3-point4": "API RESTful amb autenticació basada en tokens",
+            "subTitle3-point5": "Generació de documents PDF amb MPdf",
+            "subTitle4": "Tecnologies utilitzades:"
+        },
+        "intratimeEmployee": {
+            "title": "Intratime Empleado",
+            "text1": "Vaig desenvolupar aquesta aplicació mentre treballava a Winworld. Intratime Empleat és una aplicació web desenvolupada amb Next.js que revoluciona la gestió de recursos humans i el control de fitxatges. Aquesta solució integral permet als empleats gestionar la seva jornada laboral de manera eficient i transparent, mentre proporciona a les empreses un control precís del temps treballat.",
+            "text2": "L'aplicació destaca pel seu sistema d'autenticació robust amb inici de sessió mitjançant correu electrònic i PIN, recolzat per tokens JWT. Els empleats poden registrar les seves entrades, sortides i pauses, amb suport per al teletreball i la geolocalització. A més, integra un sistema complet de gestió documental per a nòmines i despeses.",
+            "text3": "Aquest projecte ha transformat la manera en què les empreses gestionen els seus recursos humans, simplificant processos administratius i millorant l'eficiència en el control de personal. La implementació de tecnologies modernes garanteix una experiència fluida i segura per a tots els usuaris.",
+            "subTitle1": "Sistema de Control de Fitxatges i Gestió de RRHH",
+            "subTitle2": "Tecnologies utilitzades:"
+        },
+        "intratimePanel": {
+            "title": "Intratime Panel d'Empresa",
+            "text1": "Vaig participar activament en el desenvolupament d'aquesta aplicació mentre treballava a Winworld. Intratime Empresa és una aplicació web desenvolupada amb Laravel que revoluciona la gestió de recursos humans i el control de fitxatges des del punt de vista empresarial. Aquesta solució integral permet a les empreses gestionar eficientment els seus empleats, horaris, permisos i generar informes detallats.",
+            "text2": "La versió 3 inclou una arquitectura completament renovada utilitzant Laravel com a framework base, implementant el patró MVC i Livewire per a components dinàmics. El sistema està organitzat en mòduls que inclouen:",
+            "subTitle1": "Sistema de Control de Fitxatges i Gestió de RRHH",
+            "subTitle1-point1": "Sistema avançat de fitxatges i control horari",
+            "subTitle1-point2": "Gestió completa d'empleats i departaments",
+            "subTitle1-point3": "Calendaris laborals personalitzables",
+            "subTitle1-point4": "Sistema de permisos i absències",
+            "subTitle1-point5": "Informes i estadístiques avançades",
+            "subTitle1-point6": "Configuració de centres de treball",
+            "subTitle1-point7": "Gestió de clients i projectes",
+            "subTitle2": "Característiques destacades:",
+            "subTitle2-point1": "Interfície moderna i responsive",
+            "subTitle2-point2": "Sistema de rols i permisos millorat",
+            "subTitle2-point3": "Autenticació robusta",
+            "subTitle2-point4": "API REST per a integracions",
+            "subTitle2-point5": "Suport multiidioma",
+            "subTitle2-point6": "Generació d'informes en PDF i Excel",
+            "subTitle3": "Versió Pro:",
+            "subTitle3-point1": "Gestió avançada de projectes i clients",
+            "subTitle3-point2": "Informes personalitzats",
+            "subTitle3-point3": "Funcionalitats esteses de fitxatges",
+            "subTitle4": "Tecnologies utilitzades:"
+        },
+        "factokis": {
+            "title": "Factokis - Sistema de Facturació",
+            "title2": "Plataforma Integral de Gestió Empresarial",
+            "text1": "Vaig participar activament en el desenvolupament d'aquesta aplicació mentre treballava a Winworld. Factokis és una aplicació web moderna desenvolupada amb Next.js i TypeScript que simplifica la gestió empresarial. Aquesta solució integral permet a les empreses gestionar eficientment les seves factures, contactes i finances en una única plataforma.",
+            "subTitle1": "Característiques Principals",
+            "subTitle1-point1": "Gestió completa de contactes i empreses",
+            "subTitle1-point2": "Sistema avançat de facturació",
+            "subTitle1-point3": "Control de pressupostos i abonaments",
+            "subTitle1-point4": "Gestió d'impostos (IVA i IRPF)",
+            "subTitle1-point5": "Suport multilingüe (català i anglès)",
+            "subTitle2": "Aspectes Tècnics",
+            "subTitle2-point1": "Arquitectura moderna amb Next.js i TypeScript",
+            "subTitle2-point2": "Interfície d'usuari amb NextUI",
+            "subTitle2-point3": "Gestió d'estat amb Redux",
+            "subTitle2-point4": "Sistema de validacions amb Zod",
+            "subTitle2-point5": "Traduccions integrades amb next-intl",
+            "subTitle3": "Tecnologies utilitzades"
+        },
+        "futaliner": {
+            "title": "FutAliner - Gestor d'Equips de Futbol",
+            "title2": "Sistema Intel·ligent de Gestió d'Equips de Futbol",
+            "text1": "FutAliner és la meva primera aplicació on vaig posar en pràctica tot el meu aprenentatge i la meva inventiva. És una aplicació web innovadora dissenyada per revolucionar la generació d'alineacions d'equips de futbol amateur. Desenvolupada amb React i Node.js, ofereix una solució integral per a l'organització d'equips i la generació automàtica d'alineacions equilibrades. Malauradament, no està disponible a la web per motius de pagament. L'aplicació està disponible al meu GitHub i es pot utilitzar per a la seva visualització.",
+            "subTitle1": "Característiques Principals",
+            "subTitle1-point1": "Sistema d'autenticació segur amb JWT",
+            "subTitle1-point2": "Gestió completa d'equips i jugadors",
+            "subTitle1-point3": "Sistema de valoració d'habilitats per categories",
+            "subTitle1-point4": "Algoritme intel·ligent de generació d'alineacions",
+            "subTitle1-point5": "Gestió de rols (capità/jugador)",
+            "subTitle2": "Sistema de Valoracions",
+            "subTitle2-point1": "Avaluació d'habilitats específiques",
+            "subTitle2-point2": "Càlcul automàtic de mitjanes",
+            "subTitle2-point3": "Històric d'evolució del jugador",
+            "subTitle3": "Tecnologies utilitzades:"
+        }
     }
 }

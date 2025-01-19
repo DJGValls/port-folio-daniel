@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { CustomCard } from "../cards/CustomCard";
 import { FactokisProject } from "./factokis/FactokisProject";
 import { FutAlinerProject } from "./futAliner/FutAlinerProject";
@@ -7,9 +8,10 @@ import { PortfolioProject } from "./myPortFolio/PortfolioProject";
 import { VilacasasProject } from "./vilacasas/VilacasasProject";
 
 function Projects() {
+    const t = useTranslations("projects");
     return (
         <>
-            <CustomCard title="PROYECTOS" id="vilacasas">
+            <CustomCard title={t("title")} id="vilacasas">
                 <VilacasasProject />
             </CustomCard>
             <CustomCard title="" id="intratime empleado">

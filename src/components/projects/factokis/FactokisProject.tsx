@@ -1,13 +1,15 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import dashboardImage from '/public/factokis/dashboard.png'
-import facturasImage from '/public/factokis/facturas.png'
-import contabilidadImage from '/public/factokis/contabilidad.png'
-import configuracionImage from '/public/factokis/configuracion.png'
-import contactosImage from '/public/factokis/contactos.png'
+import dashboardImage from "/public/factokis/dashboard.png";
+import facturasImage from "/public/factokis/facturas.png";
+import contabilidadImage from "/public/factokis/contabilidad.png";
+import configuracionImage from "/public/factokis/configuracion.png";
+import contactosImage from "/public/factokis/contactos.png";
+import { useTranslations } from "next-intl";
 
 export const FactokisProject = () => {
+    const t = useTranslations("projects.factokis");
     const itemData = [
         {
             id: 1,
@@ -19,7 +21,7 @@ export const FactokisProject = () => {
         {
             id: 2,
             img: facturasImage,
-            title: "Facturas", 
+            title: "Facturas",
             rows: 1,
             cols: 2,
         },
@@ -51,9 +53,9 @@ export const FactokisProject = () => {
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
                     <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
-                        <span>Factokis - Sistema de Facturación</span>
+                        <span>{t("title")}</span>
                         <IconButton
-                            key="intratimeEmpleado"
+                            key="factokis"
                             href="https://panelv3.intratime.es/"
                             target="_blank"
                             sx={{
@@ -68,38 +70,29 @@ export const FactokisProject = () => {
                     </h5>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg text-bunker-300">Plataforma Integral de Gestión Empresarial</h3>
+                            <h3 className="text-lg text-bunker-300">{t("title2")}</h3>
                         </div>
-
                         <div className="space-y-4">
-                            <p>
-                                Participé activamente en el desarrollo de esta aplicación mientras trabajaba en
-                                Winworld. Factokis es una aplicación web moderna desarrollada con Next.js y TypeScript
-                                que simplifica la gestión empresarial. Esta solución integral permite a las empresas
-                                gestionar eficientemente sus facturas, contactos y finanzas en una única plataforma.
-                            </p>
-
-                            <h6 className="font-medium text-yellow-300/80">Características Principales:</h6>
+                            <p>{t("text1")}</p>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle1")}</h6>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Gestión completa de contactos y empresas</li>
-                                <li>Sistema avanzado de facturación</li>
-                                <li>Control de presupuestos y abonos</li>
-                                <li>Gestión de impuestos (IVA e IRPF)</li>
-                                <li>Soporte multiidioma (español e inglés)</li>
+                                <li>{t("subTitle1-point1")}</li>
+                                <li>{t("subTitle1-point2")}</li>
+                                <li>{t("subTitle1-point3")}</li>
+                                <li>{t("subTitle1-point4")}</li>
+                                <li>{t("subTitle1-point5")}</li>
                             </ul>
-
-                            <h6 className="font-medium text-yellow-300/80">Aspectos Técnicos:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle2")}</h6>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Arquitectura moderna con Next.js y TypeScript</li>
-                                <li>Interfaz de usuario con NextUI</li>
-                                <li>Gestión de estado con Redux</li>
-                                <li>Sistema de validaciones con Zod</li>
-                                <li>Traducciones integradas con next-intl</li>
+                                <li>{t("subTitle2-point1")}</li>
+                                <li>{t("subTitle2-point2")}</li>
+                                <li>{t("subTitle2-point3")}</li>
+                                <li>{t("subTitle2-point4")}</li>
+                                <li>{t("subTitle2-point5")}</li>
                             </ul>
                         </div>
-
                         <div>
-                        <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle3")}</h6>
                             <div className="flex flex-wrap gap-2">
                                 {[
                                     "Next.js",

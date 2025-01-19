@@ -6,8 +6,10 @@ import clockingsImage from "/public/intratimeEmpleado/clockings.png";
 import historicImage from "/public/intratimeEmpleado/historic.png";
 import calendarImage from "/public/intratimeEmpleado/calendar.png";
 import calendarlenguajeImage from "/public/intratimeEmpleado/calendarlenguaje.png";
+import { useTranslations } from "next-intl";
 
 export const IntratimeEmpleadoProject = () => {
+    const t = useTranslations("projects.intratimeEmployee");
     const itemData = [
         // primera fila
         {
@@ -53,7 +55,7 @@ export const IntratimeEmpleadoProject = () => {
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
                     <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
-                        <span>Intratime Empleado</span>
+                        <span>{t("title")}</span>
                         <IconButton
                             key="intratimeEmpleado"
                             href="https://intratimev3pro-panelempleado.azurewebsites.net/"
@@ -70,37 +72,16 @@ export const IntratimeEmpleadoProject = () => {
                     </h5>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg text-bunker-300">
-                                Sistema de Control de Fichajes y Gestión de RRHH
-                            </h3>
+                            <h3 className="text-lg text-bunker-300">{t("subTitle1")}</h3>
                         </div>
-
                         <div className="space-y-4">
-                            <p>
-                                Desarrollé esta aplicación mientras trabajaba en Winworld. Intratime Empleado es una
-                                aplicación web desarrollada con Next.js que revoluciona la gestión de recursos humanos y
-                                el control de fichajes. Esta solución integral permite a los empleados gestionar su
-                                jornada laboral de forma eficiente y transparente, mientras proporciona a las empresas
-                                un control preciso del tiempo trabajado.
-                            </p>
-
-                            <p>
-                                La aplicación destaca por su sistema de autenticación robusto con login mediante email y
-                                PIN, respaldado por tokens JWT. Los empleados pueden registrar sus entradas, salidas y
-                                pausas, con soporte para teletrabajo y geolocalización. Además, integra un completo
-                                sistema de gestión documental para nóminas y gastos.
-                            </p>
-
-                            <p>
-                                Este proyecto ha transformado la manera en que las empresas gestionan sus recursos
-                                humanos, simplificando procesos administrativos y mejorando la eficiencia en el control
-                                de personal. La implementación de tecnologías modernas garantiza una experiencia fluida
-                                y segura para todos los usuarios.
-                            </p>
+                            <p>{t("text1")}</p>
+                            <p>{t("text2")}</p>
+                            <p>{t("text3")}</p>
                         </div>
 
                         <div>
-                            <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle2")}</h6>
                             <div className="flex flex-wrap gap-2">
                                 {[
                                     "Next.js",

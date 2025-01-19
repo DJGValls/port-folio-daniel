@@ -8,6 +8,7 @@ import { Email, Home, Person, Work } from "@mui/icons-material";
 import { usePathname, useRouter } from "next/navigation";
 import { Language } from "@mui/icons-material";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface CustomNavbarProps {
     lang: string;
@@ -16,6 +17,8 @@ interface CustomNavbarProps {
 function CustomNavbar(props: CustomNavbarProps) {
     const { lang } = props;
     const pathname = usePathname();
+    const t = useTranslations("navbar");
+
     const [value, setValue] = useState(() => {
         // Determinar el valor inicial basado en el pathname
         if (pathname.includes("/home")) return 0;
@@ -117,28 +120,28 @@ function CustomNavbar(props: CustomNavbarProps) {
                         }}>
                         <BottomNavigationAction
                             key={"home"}
-                            label="Inicio"
+                            label={t("home")}
                             icon={<Home />}
                             component={Link}
                             href={`/${lang}/home`}
                         />
                         <BottomNavigationAction
                             key={"aboutMe"}
-                            label="Sobre mi"
+                            label={t("about")}
                             icon={<Person />}
                             component={Link}
                             href={`/${lang}/aboutMe`}
                         />
                         <BottomNavigationAction
                             key={"projects"}
-                            label="Proyectos"
+                            label={t("projects")}
                             icon={<Work />}
                             component={Link}
                             href={`/${lang}/projects`}
                         />
                         <BottomNavigationAction
                             key={"contact"}
-                            label="Contacto"
+                            label={t("contact")}
                             icon={<Email />}
                             component={Link}
                             href={`/${lang}/contact`}

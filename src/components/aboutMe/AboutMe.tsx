@@ -11,43 +11,30 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { SiLaravel } from "react-icons/si";
 import { SiLivewire } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
+interface AboutMeProps {
+    lang: string;
+}
 
-
-function AboutMe() {
-    // const lang = params.lang || 'en';
-    const lang = "en";
+function AboutMe(props: AboutMeProps) {
+    const { lang } = props;
+    const t = useTranslations("aboutMe");
     return (
-        <CustomCard title="SOBRE MI" id="about">
+        <CustomCard title={t("title")} id="about">
             <div className="w-full lg:w-1/2 lg:pl-4 lg:pr-12">
                 <div className="mt-8 space-y-6">
+                    <p>{t("text1")}</p>
+                    <p>{t("text2")}</p>
                     <p>
-                        Soy un desarrollador web full-stack apasionado por crear soluciones web efectivas y accesibles.
-                        Me especializo en tecnologías como HTML, CSS, JavaScript, TypeScript, Php, React, Next.js, Laravel, Blade, Livewire, AlpineJs, Tailwind, Bootstrap, trabajando tanto en el front-end como en el
-                        back-end para desarrollar aplicaciones completas.
-                    </p>
-                    <p>
-                        Mi experiencia no se limita solo a la web; también desarrollo aplicaciones móviles
-                        multiplataforma utilizando React Native, lo que me permite crear soluciones que funcionan tanto
-                        en iOS como en Android manteniendo una base de código única y eficiente.
-                    </p>
-                    <p>
-                        En{" "}
                         <a
                             href={`/${lang}/projects`}
                             className="text-yellow-300/80 hover:text-yellow-300  decoration-2 underline-offset-4 transition-colors duration-300 hover:drop-shadow-[0_0_0.3rem_#fde047]">
-                            mis proyectos
+                            {t("linkText")}
                         </a>{" "}
-                        podrás encontrar ejemplos de interfaces pensadas para el usuario, donde combino diseño y
-                        funcionalidad. En el lado del servidor, trabajo con Node.js, Express, Php y Laravel, enfocándome
-                        en crear aplicaciones seguras y mantenibles.
+                        {t("text3")}
                     </p>
-                    <p>
-                        Me encanta aprender y mantenerme al día con las nuevas tecnologías y mejores prácticas del
-                        desarrollo web y móvil. Disfruto colaborando en equipo y enfrentando nuevos retos que me
-                        permitan seguir creciendo como desarrollador. Siempre busco aportar soluciones prácticas y
-                        eficientes en cada proyecto.
-                    </p>
+                    <p>{t("text4")}</p>
                 </div>
             </div>
             <div className="w-full lg:w-1/2 lg:pr-4 lg:pl-12">

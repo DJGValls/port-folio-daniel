@@ -36,6 +36,16 @@ body {
     }
 }
 
+/* Para la imagen del portfolio */
+.image-container-home {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgb(var(--primary-light));
+}
+.image-container-home:hover {
+    transform: scale(1.05);
+    transition: transform 1.3s ease-in-out;
+}
+
 /* Mi fondo de viento del desierto */
 canvas {
     position: fixed;

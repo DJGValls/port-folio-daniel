@@ -4,9 +4,115 @@
         "description": "Web portfolio developed with Next.js and TypeScript",
         "technologies": "Technologies used"
     },
+    "navbar": {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "footer": {
+        "footerText": "© 2025 All rights reserved"
+    },
     "home": {
         "textInfoPosition": "Full-Stack Web Developer with",
         "textInfoExperience": "+3 years of experience.",
         "textInfoResume": "Passionate about programming and learning."
+    },
+    "aboutMe": {
+        "title": "About Me",
+        "text1": "I am a full-stack web developer passionate about creating effective and accessible web solutions. I specialize in technologies such as HTML, CSS, JavaScript, TypeScript, Php, React, Next.js, Laravel, Blade, Livewire, AlpineJs, Tailwind, Bootstrap, working both on the front-end and back-end to develop complete applications.",
+        "text2": "My experience is not limited to the web; I also develop cross-platform mobile applications using React Native, which allows me to create solutions that work on both iOS and Android while maintaining a single and efficient codebase.",
+        "linkText": "In my projects",
+        "text3": "you can find examples of user-oriented interfaces, where I combine design and functionality. On the server side, I work with Node.js, Express, Php, and Laravel, focusing on creating secure and maintainable applications.",
+        "text4": "I love learning and keeping up to date with new technologies and best practices in web and mobile development. I enjoy collaborating in a team and facing new challenges that allow me to continue growing as a developer. I always strive to provide practical and efficient solutions in every project."
+    },
+    "projects": {
+        "title": "Projects",
+        "vilacasas": {
+            "title": "Intrawin Fundació Vilacasas",
+            "text1": "I developed this business financial management application while working at Winworld. It is a comprehensive intranet that integrates budget and treasury management, providing efficient tools for financial control and decision-making. The application is built with a modern architecture using Next.js and TypeScript for the frontend, while the backend uses PHP with Laravel and MySQL.",
+            "subTitle1": "Budget Management",
+            "subTitle1-point1": "Budget editor with drag & drop functionality",
+            "subTitle1-point2": "Hierarchical organization in three levels for better control",
+            "subTitle1-point3": "Intuitive system for creating and editing templates",
+            "subTitle2": "Financial Control",
+            "subTitle2-point1": "Detailed reports in PDF format",
+            "subTitle2-point2": "Investment and treasury dashboard",
+            "subTitle2-point3": "Report export and distribution system",
+            "subTitle3": "Technical Aspects",
+            "subTitle3-point1": "Modular design for easy maintenance and scalability",
+            "subTitle3-point2": "Multilingual support (ES/CAT/EN)",
+            "subTitle3-point3": "Custom roles and permissions system",
+            "subTitle3-point4": "RESTful API with token-based authentication",
+            "subTitle3-point5": "PDF document generation with MPdf",
+            "subTitle4": "Technologies used:"
+        },
+        "intratimeEmployee": {
+            "title": "Intratime Empleado",
+            "text1": "I developed this application while working at Winworld. Intratime Employee is a web application developed with Next.js that revolutionizes human resources management and time tracking. This comprehensive solution allows employees to manage their workday efficiently and transparently, while providing companies with precise control over worked time.",
+            "text2": "The application stands out for its robust authentication system with login via email and PIN, backed by JWT tokens. Employees can register their entries, exits, and breaks, with support for remote work and geolocation. Additionally, it integrates a complete document management system for payroll and expenses.",
+            "text3": "This project has transformed the way companies manage their human resources, simplifying administrative processes and improving efficiency in personnel control. The implementation of modern technologies ensures a smooth and secure experience for all users.",
+            "subTitle1": "Time Tracking and HR Management System",
+            "subTitle2": "Technologies used:"
+        },
+        "intratimePanel": {
+            "title": "Intratime Company Panel",
+            "text1": "I actively participated in the development of this application while working at Winworld. Intratime Company is a web application developed with Laravel that revolutionizes human resources management and time tracking from a business perspective. This comprehensive solution allows companies to efficiently manage their employees, schedules, permissions, and generate detailed reports.",
+            "text2": "Version 3 includes a completely revamped architecture using Laravel as the base framework, implementing the MVC pattern and Livewire for dynamic components. The system is organized into modules that include:",
+            "subTitle1": "Time Tracking and HR Management System",
+            "subTitle1-point1": "Advanced time tracking and attendance system",
+            "subTitle1-point2": "Complete management of employees and departments",
+            "subTitle1-point3": "Customizable work calendars",
+            "subTitle1-point4": "Permissions and absences system",
+            "subTitle1-point5": "Advanced reports and statistics",
+            "subTitle1-point6": "Work center configuration",
+            "subTitle1-point7": "Client and project management",
+            "subTitle2": "Highlighted Features:",
+            "subTitle2-point1": "Modern and responsive interface",
+            "subTitle2-point2": "Enhanced roles and permissions system",
+            "subTitle2-point3": "Robust authentication",
+            "subTitle2-point4": "REST API for integrations",
+            "subTitle2-point5": "Multilingual support",
+            "subTitle2-point6": "Report generation in PDF and Excel",
+            "subTitle3": "Pro Version:",
+            "subTitle3-point1": "Advanced project and client management",
+            "subTitle3-point2": "Custom reports",
+            "subTitle3-point3": "Extended time tracking features",
+            "subTitle4": "Technologies used:"
+        },
+        "factokis": {
+            "title": "Factokis - Billing System",
+            "title2": "Comprehensive Business Management Platform",
+            "text1": "I actively participated in the development of this application while working at Winworld. Factokis is a modern web application developed with Next.js and TypeScript that simplifies business management. This comprehensive solution allows companies to efficiently manage their invoices, contacts, and finances on a single platform.",
+            "subTitle1": "Main Features",
+            "subTitle1-point1": "Complete management of contacts and companies",
+            "subTitle1-point2": "Advanced billing system",
+            "subTitle1-point3": "Budget and credit control",
+            "subTitle1-point4": "Tax management (VAT and IRPF)",
+            "subTitle1-point5": "Multilingual support (Spanish and English)",
+            "subTitle2": "Technical Aspects",
+            "subTitle2-point1": "Modern architecture with Next.js and TypeScript",
+            "subTitle2-point2": "User interface with NextUI",
+            "subTitle2-point3": "State management with Redux",
+            "subTitle2-point4": "Validation system with Zod",
+            "subTitle2-point5": "Integrated translations with next-intl",
+            "subTitle3": "Technologies used"
+        },
+        "futaliner": {
+            "title": "FutAliner - Football Team Manager",
+            "title2": "Intelligent Football Team Management System",
+            "text1": "FutAliner is my first application where I put all my learning and inventiveness into practice. It is an innovative web application designed to revolutionize the generation of amateur football team lineups. Developed with React and Node.js, it offers a comprehensive solution for team organization and the automatic generation of balanced lineups. Unfortunately, it is not available on the web due to payment issues. The application is available on my GitHub and can be used for viewing.",
+            "subTitle1": "Main Features",
+            "subTitle1-point1": "Secure authentication system with JWT",
+            "subTitle1-point2": "Complete management of teams and players",
+            "subTitle1-point3": "Skill assessment system by categories",
+            "subTitle1-point4": "Intelligent lineup generation algorithm",
+            "subTitle1-point5": "Role management (captain/player)",
+            "subTitle2": "Evaluation System",
+            "subTitle2-point1": "Specific skill assessment",
+            "subTitle2-point2": "Automatic average calculation",
+            "subTitle2-point3": "Player development history",
+            "subTitle3": "Technologies used:"
+        }
     }
 }

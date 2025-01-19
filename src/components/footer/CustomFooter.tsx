@@ -1,8 +1,10 @@
 import { Box, IconButton } from "@mui/material";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useTranslations } from "next-intl";
 
 function CustomFooter() {
+    const t = useTranslations("footer");
     return (
         <Box
             component="footer"
@@ -17,7 +19,7 @@ function CustomFooter() {
             }}>
             <div className="container mx-auto flex flex-wrap justify-between items-center p-8">
                 <p className="w-full lg:w-fit text-sm text-center lg:text-left text-bunker-200">
-                    © 2025 Todos los derechos reservados
+                    {t("footerText")}
                 </p>
                 <div className="w-full lg:w-fit justify-center mt-8 lg:mt-0 flex space-x-6">
                     {[

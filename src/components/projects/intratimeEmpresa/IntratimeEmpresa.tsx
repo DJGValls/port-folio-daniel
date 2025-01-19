@@ -1,17 +1,19 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import singinImage from '/public/intratimeEmpresa/singin.png';
-import loginImage from '/public/intratimeEmpresa/login.png';
-import resetPassImage from '/public/intratimeEmpresa/resetPass.png';
-import clockingsImage from '/public/intratimeEmpresa/clockings.png';
-import employeeCalendarImage from '/public/intratimeEmpresa/employeeCalendar.png';
-import calendarImage from '/public/intratimeEmpresa/calendar.png';
-import sidevarImage from '/public/intratimeEmpresa/sidevar.png';
-import employeeAbsencesImage from '/public/intratimeEmpresa/employeeAbsences.png';
-import clockingsByemployeeImage from '/public/intratimeEmpresa/clockingsByemployee.png';
+import singinImage from "/public/intratimeEmpresa/singin.png";
+import loginImage from "/public/intratimeEmpresa/login.png";
+import resetPassImage from "/public/intratimeEmpresa/resetPass.png";
+import clockingsImage from "/public/intratimeEmpresa/clockings.png";
+import employeeCalendarImage from "/public/intratimeEmpresa/employeeCalendar.png";
+import calendarImage from "/public/intratimeEmpresa/calendar.png";
+import sidevarImage from "/public/intratimeEmpresa/sidevar.png";
+import employeeAbsencesImage from "/public/intratimeEmpresa/employeeAbsences.png";
+import clockingsByemployeeImage from "/public/intratimeEmpresa/clockingsByemployee.png";
+import { useTranslations } from "next-intl";
 
 export const IntratimeEmpresa = () => {
+    const t = useTranslations("projects.intratimePanel");
     const itemData = [
         // primera fila
         {
@@ -86,7 +88,7 @@ export const IntratimeEmpresa = () => {
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
                     <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
-                        <span>Intratime Panel de Empresa</span>
+                        <span>{t("title")}</span>
                         <IconButton
                             key="intratimeEmpleado"
                             href="https://panelv3.intratime.es/"
@@ -103,54 +105,36 @@ export const IntratimeEmpresa = () => {
                     </h5>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg text-bunker-300">
-                                Sistema de Control de Fichajes y Gestión de RRHH
-                            </h3>
+                            <h3 className="text-lg text-bunker-300">{t("subTitle1")}</h3>
                         </div>
-
                         <div className="space-y-4">
-                            <p>
-                                Participé activamente en el desarrollo de esta aplicación mientras trabajaba en
-                                Winworld. Intratime Empresa es una aplicación web desarrollada con Laravel que
-                                revoluciona la gestión de recursos humanos y el control de fichajes desde el punto de
-                                vista empresarial. Esta solución integral permite a las empresas gestionar
-                                eficientemente sus empleados, horarios, permisos y generar informes detallados.
-                            </p>
-
-                            <p>
-                                La versión 3 incluye una arquitectura completamente renovada utilizando Laravel como
-                                framework base, implementando el patrón MVC y Livewire para componentes dinámicos. El
-                                sistema está organizado en módulos que incluyen:
-                            </p>
-
+                            <p>{t("text1")}</p>
+                            <p>{t("text2")}</p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Sistema avanzado de fichajes y control horario</li>
-                                <li>Gestión completa de empleados y departamentos</li>
-                                <li>Calendarios laborales personalizables</li>
-                                <li>Sistema de permisos y ausencias</li>
-                                <li>Reportes y estadísticas avanzadas</li>
-                                <li>Configuración de centros de trabajo</li>
-                                <li>Gestión de clientes y proyectos</li>
+                                <li>{t("subTitle1-point1")}</li>
+                                <li>{t("subTitle1-point2")}</li>
+                                <li>{t("subTitle1-point3")}</li>
+                                <li>{t("subTitle1-point4")}</li>
+                                <li>{t("subTitle1-point5")}</li>
+                                <li>{t("subTitle1-point6")}</li>
+                                <li>{t("subTitle1-point7")}</li>
                             </ul>
-
-                            <h6 className="font-medium text-yellow-300/80">Características destacadas:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle2")}</h6>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Interfaz moderna y responsive</li>
-                                <li>Sistema de roles y permisos mejorado</li>
-                                <li>Autenticación robusta</li>
-                                <li>API REST para integraciones</li>
-                                <li>Soporte multiidioma</li>
-                                <li>Generación de informes en PDF y Excel</li>
+                                <li>{t("subTitle2-point1")}</li>
+                                <li>{t("subTitle2-point2")}</li>
+                                <li>{t("subTitle2-point3")}</li>
+                                <li>{t("subTitle2-point4")}</li>
+                                <li>{t("subTitle2-point5")}</li>
+                                <li>{t("subTitle2-point6")}</li>
                             </ul>
-
-                            <h6 className="font-medium text-yellow-300/80">Versión Pro:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle3")}</h6>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Gestión avanzada de proyectos y clientes</li>
-                                <li>Reportes personalizados</li>
-                                <li>Funcionalidades extendidas de fichajes</li>
+                                <li>{t("subTitle3-point1")}</li>
+                                <li>{t("subTitle3-point2")}</li>
+                                <li>{t("subTitle3-point3")}</li>
                             </ul>
-
-                            <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle4")}</h6>
                             <div className="flex flex-wrap gap-2">
                                 {[
                                     "PHP",

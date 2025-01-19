@@ -4,11 +4,17 @@ import { useEffect, useRef, useState } from "react";
 export const DeserParticlesBackground = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 0,
+        height: 0,
     });
 
     useEffect(() => {
+        // Actualizar dimensiones iniciales
+        setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+
         const handleResize = () => {
             setWindowSize({
                 width: window.innerWidth,
@@ -17,10 +23,8 @@ export const DeserParticlesBackground = () => {
         };
 
         window.addEventListener("resize", handleResize);
-
-        // Limpieza del listener
         return () => window.removeEventListener("resize", handleResize);
-    }, [windowSize]);
+    }, []);
 
     useEffect(() => {
         const canvas = canvasRef.current;
