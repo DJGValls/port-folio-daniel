@@ -113,6 +113,28 @@
             "subTitle2-point2": "Automatic average calculation",
             "subTitle2-point3": "Player development history",
             "subTitle3": "Technologies used:"
+        },
+        "portfolioPersonal": {
+            "title": "Personal Portfolio",
+            "title2": "Personal Web Portfolio",
+            "text1": "Web portfolio developed with Next.js and TypeScript, implementing a modern and responsive design. It uses Material-UI and Tailwind CSS for the user interface, with smooth animations and elegant transitions.",
+            "subTitle1": "Technologies used:"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "text1": "If you are interested or have any questions, please do not hesitate to contact me. I am open to new opportunities and always willing to learn and grow. I hope I can help you!",
+        "text2": "You can contact me through the form, my email, or through my social media. I look forward to your message!",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "button": "Send",
+            "success": "Message sent successfully",
+            "error": "Error sending the message",
+            "messagePlaceholder": "Write your message here...",
+            "namePlaceholder": "Write your name here...",
+            "emailPlaceholder": "example@example.com"
         }
     }
 }

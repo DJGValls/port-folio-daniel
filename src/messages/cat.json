@@ -113,6 +113,28 @@
             "subTitle2-point2": "Càlcul automàtic de mitjanes",
             "subTitle2-point3": "Històric d'evolució del jugador",
             "subTitle3": "Tecnologies utilitzades:"
+        },
+        "portfolioPersonal": {
+            "title": "Portafoli Personal",
+            "title2": "Portafoli Web Personal",
+            "text1": "Portafoli web desenvolupat amb Next.js i TypeScript, implementant un disseny modern i responsiu. Utilitza Material-UI i Tailwind CSS per a la interfície d'usuari, amb animacions suaus i transicions elegants.",
+            "subTitle1": "Tecnologies utilitzades:"
+        }
+    },
+    "contact": {
+        "title": "Contacte",
+        "text1": "Si estàs interessat o tens alguna pregunta, no dubtis a posar-te en contacte amb mi. Estic obert a noves oportunitats i sempre disposat a aprendre i créixer. Espero poder ajudar-te!",
+        "text2": "Pots contactar-me a través del formulari, el meu correu electrònic o a través de les meves xarxes socials. Espero el teu missatge!",
+        "form": {
+            "name": "Nom",
+            "email": "Correu electrònic",
+            "message": "Missatge",
+            "button": "Enviar",
+            "success": "Missatge enviat amb èxit",
+            "error": "Error en enviar el missatge",
+            "messagePlaceholder": "Escriu el teu missatge aquí...",
+            "namePlaceholder": "Escriu el teu nom aquí...",
+            "emailPlaceholder": "exemple@exemple.com"
         }
     }
 }

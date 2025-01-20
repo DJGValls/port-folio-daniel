@@ -1,28 +1,35 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
+import homeImage from "/public/portfolio/home.png";
+import aboutMeImage from "/public/portfolio/aboutMe.png";
+import contactImage from "/public/portfolio/contact.png";
+import { useTranslations } from "next-intl";
 
 export const PortfolioProject = () => {
+    const t = useTranslations("projects.portfolioPersonal");
     const itemData = [
         {
-            img: "/portfolio/home.png",
+            id: 1,
+            img: homeImage,
             title: "Página de inicio",
-            rows: 2,
+            rows: 3,
             cols: 4,
         },
         {
-            img: "/portfolio/aboutme.png",
+            id: 2,
+            img: aboutMeImage,
             title: "Sobre mí",
             rows: 1,
             cols: 2,
         },
         {
-            img: "/portfolio/projects.png",
-            title: "Proyectos",
+            id: 3,
+            img: contactImage,
+            title: "contacto",
             rows: 1,
             cols: 2,
         },
-        // Añade más imágenes según necesites
     ];
 
     return (
@@ -30,7 +37,7 @@ export const PortfolioProject = () => {
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
                     <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
-                        <span>Portfolio Personal</span>
+                        <span>{t("title")}</span>
                         <IconButton
                             href="https://tu-portfolio.dev"
                             target="_blank"
@@ -45,19 +52,10 @@ export const PortfolioProject = () => {
                         </IconButton>
                     </h5>
                     <div className="space-y-6">
-                        <div>
-                            <h3 className="text-lg text-bunker-300">
-                                Portfolio Web Personal
-                            </h3>
-                        </div>
+                        <div className="space-y-4 mt-4">
+                            <p>{t("text1")}</p>
 
-                        <div className="space-y-4">
-                            <p>
-                                Portfolio web desarrollado con Next.js y TypeScript, implementando un diseño moderno y responsivo.
-                                Utiliza Material-UI y Tailwind CSS para la interfaz de usuario, con animaciones suaves y transiciones elegantes.
-                            </p>
-
-                            <h6 className="font-medium text-yellow-300/80">Tecnologías utilizadas:</h6>
+                            <h6 className="font-medium text-yellow-300/80">{t("subTitle1")}</h6>
                             <div className="flex flex-wrap gap-2">
                                 {[
                                     "Next.js",
@@ -65,7 +63,7 @@ export const PortfolioProject = () => {
                                     "Material-UI",
                                     "Tailwind CSS",
                                     "React Icons",
-                                    "Formspree"
+                                    "Formspree",
                                 ].map((tech, index) => (
                                     <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
                                         {tech}
@@ -79,7 +77,7 @@ export const PortfolioProject = () => {
             <div className="w-full mt-8 lg:mt-0 lg:w-1/2 p-2">
                 <ImageList variant="quilted" cols={4} rowHeight={121}>
                     {itemData.map((item) => (
-                        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                        <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
                             <Image
                                 src={item.img}
                                 alt={item.title}

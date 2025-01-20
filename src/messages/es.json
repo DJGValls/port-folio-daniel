@@ -113,6 +113,28 @@
             "subTitle2-point2": "Cálculo automático de medias",
             "subTitle2-point3": "Histórico de evolución del jugador",
             "subTitle3": "Tecnologías utilizadas:"
+        },
+        "portfolioPersonal": {
+            "title": "Portafolio Personal",
+            "title2": "Portafolio Web Personal",
+            "text1": "Portfolio web desarrollado con Next.js y TypeScript, implementando un diseño moderno y responsivo. Utiliza Material-UI y Tailwind CSS para la interfaz de usuario, con animaciones suaves y transiciones elegantes.",
+            "subTitle1": "Tecnologías utilizadas:"
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "text1": "Si estás interesado o tienes alguna pregunta, no dudes en ponerte en contacto conmigo. Estoy abierto a nuevas oportunidades y siempre estoy dispuesto a aprender y crecer. ¡Espero poder ayudarte!",
+        "text2": "Puedes contactarme a través del formulario, mi correo electrónico o a través de mis redes sociales. ¡Espero tu mensaje!",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "button": "Enviar",
+            "success": "Mensaje enviado con éxito",
+            "error": "Error al enviar el mensaje",
+            "messagePlaceholder": "Escribe tu mensaje aquí...",
+            "namePlaceholder": "Escribe tu nombre aquí...",
+            "emailPlaceholder": "ejemplo@ejemplo.com"
         }
     }
 }

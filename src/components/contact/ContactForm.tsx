@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useEffect, useState } from "react";
 import { Button, FormControl, TextField } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 const inputsSchema = z.object({
     name: z.string().min(1),
@@ -16,6 +17,7 @@ const inputsSchema = z.object({
 type Inputs = z.infer<typeof inputsSchema>;
 
 function ContactForm() {
+    const t = useTranslations("contact.form");
     const [sent, setSent] = useState(false);
 
     useEffect(() => {
@@ -63,11 +65,11 @@ function ContactForm() {
             noValidate>
             <TextField
                 id="contact-name"
-                label="Nombre"
-                placeholder="Jhon Doe"
+                label={t("name")}
+                placeholder={t("namePlaceholder")}
                 fullWidth
                 error={!!errors.name}
-                helperText={errors.name ? "Asegúrese de que este campo es válido" : ""}
+                helperText={errors.name ? t("error") : ""}
                 {...register("name")}
                 sx={{
                     "& .MuiOutlinedInput-root": {
@@ -95,12 +97,12 @@ function ContactForm() {
             />
             <TextField
                 id="contact-email"
-                label="Email"
+                label={t("email")}
                 type="email"
-                placeholder="example@example.com"
+                placeholder={t("emailPlaceholder")}
                 fullWidth
                 error={!!errors.email}
-                helperText={errors.email ? "Asegúrese de que este campo es válido" : ""}
+                helperText={errors.email ? t("error") : ""}
                 {...register("email")}
                 sx={{
                     "& .MuiOutlinedInput-root": {
@@ -128,13 +130,13 @@ function ContactForm() {
             />
             <TextField
                 id="contact-message"
-                label="Mensaje"
-                placeholder="Escriba su mensaje"
+                label={t("message")}
+                placeholder={t("messagePlaceholder")}
                 multiline
                 rows={4}
                 fullWidth
                 error={!!errors.message}
-                helperText={errors.message ? "Asegúrese de que este campo es válido" : ""}
+                helperText={errors.message ? t("error") : ""}
                 {...register("message")}
                 sx={{
                     "& .MuiOutlinedInput-root": {
@@ -175,9 +177,9 @@ function ContactForm() {
                     fontSize: "1rem",
                     textTransform: "none",
                 }}>
-                Enviar
+                {t("button")}
             </Button>
-            {sent ? <p className="text-green-400">Mensaje enviado con éxito</p> : null}
+            {sent ? <p className="text-green-400">{t("success")}</p> : null}
         </FormControl>
     );
 }
