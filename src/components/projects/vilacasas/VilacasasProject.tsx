@@ -1,7 +1,7 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import loginImage from "/public/vilacasas/login.png";
+import loginImage from "../../../../public/vilacasas/login.png";
 import { useTranslations } from "next-intl";
 
 export const VilacasasProject = () => {

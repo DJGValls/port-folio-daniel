@@ -1,11 +1,11 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import dashboardImage from "/public/futaliner/dashboard.png";
-import teamsImage from "/public/futaliner/teams.png";
-import playersImage from "/public/futaliner/players.png";
-import matchmakerImage from "/public/futaliner/matchmaker.png";
-import statsImage from "/public/futaliner/stats.png";
+import dashboardImage from "../../../../public/futaliner/dashboard.png";
+import teamsImage from "../../../../public/futaliner/teams.png";
+import playersImage from "../../../../public/futaliner/players.png";
+import matchmakerImage from "../../../../public/futaliner/matchmaker.png";
+import statsImage from "../../../../public/futaliner/stats.png";
 import { useTranslations } from "next-intl";
 
 export const FutAlinerProject = () => {

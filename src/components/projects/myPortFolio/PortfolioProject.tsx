@@ -1,9 +1,9 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import homeImage from "/public/portfolio/home.png";
-import aboutMeImage from "/public/portfolio/aboutMe.png";
-import contactImage from "/public/portfolio/contact.png";
+import homeImage from "../../../../public/portfolio/home.png";
+import aboutMeImage from "../../../../public/portfolio/aboutMe.png";
+import contactImage from "../../../../public/portfolio/contact.png";
 import { useTranslations } from "next-intl";
 
 export const PortfolioProject = () => {

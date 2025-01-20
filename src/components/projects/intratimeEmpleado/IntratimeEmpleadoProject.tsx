@@ -2,10 +2,10 @@ import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
 import loginImage from "/public/intratimeEmpleado/login.png";
-import clockingsImage from "/public/intratimeEmpleado/clockings.png";
-import historicImage from "/public/intratimeEmpleado/historic.png";
-import calendarImage from "/public/intratimeEmpleado/calendar.png";
-import calendarlenguajeImage from "/public/intratimeEmpleado/calendarlenguaje.png";
+import clockingsImage from "../../../../public/intratimeEmpleado/clockings.png";
+import historicImage from "../../../../public/intratimeEmpleado/historic.png";
+import calendarImage from "../../../../public/intratimeEmpleado/calendar.png";
+import calendarlenguajeImage from "../../../../public/intratimeEmpleado/calendarlenguaje.png";
 import { useTranslations } from "next-intl";
 
 export const IntratimeEmpleadoProject = () => {

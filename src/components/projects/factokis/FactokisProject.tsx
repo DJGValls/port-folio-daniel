@@ -1,11 +1,11 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import dashboardImage from "/public/factokis/dashboard.png";
-import facturasImage from "/public/factokis/facturas.png";
-import contabilidadImage from "/public/factokis/contabilidad.png";
-import configuracionImage from "/public/factokis/configuracion.png";
-import contactosImage from "/public/factokis/contactos.png";
+import dashboardImage from "../../../../public/factokis/dashboard.png";
+import facturasImage from "../../../../public/factokis/facturas.png";
+import contabilidadImage from "../../../../public/factokis/contabilidad.png";
+import configuracionImage from "../../../../public/factokis/configuracion.png";
+import contactosImage from "../../../../public/factokis/contactos.png";
 import { useTranslations } from "next-intl";
 
 export const FactokisProject = () => {

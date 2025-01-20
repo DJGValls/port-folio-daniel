@@ -1,15 +1,15 @@
 import { IconButton, ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
-import singinImage from "/public/intratimeEmpresa/singin.png";
-import loginImage from "/public/intratimeEmpresa/login.png";
-import resetPassImage from "/public/intratimeEmpresa/resetPass.png";
-import clockingsImage from "/public/intratimeEmpresa/clockings.png";
-import employeeCalendarImage from "/public/intratimeEmpresa/employeeCalendar.png";
-import calendarImage from "/public/intratimeEmpresa/calendar.png";
-import sidevarImage from "/public/intratimeEmpresa/sidevar.png";
-import employeeAbsencesImage from "/public/intratimeEmpresa/employeeAbsences.png";
-import clockingsByemployeeImage from "/public/intratimeEmpresa/clockingsByemployee.png";
+import singinImage from "../../../../public/intratimeEmpresa/singin.png";
+import loginImage from "../../../../public/intratimeEmpresa/login.png";
+import resetPassImage from "../../../../public/intratimeEmpresa/resetPass.png";
+import clockingsImage from "../../../../public/intratimeEmpresa/clockings.png";
+import employeeCalendarImage from "../../../../public/intratimeEmpresa/employeeCalendar.png";
+import calendarImage from "../../../../public/intratimeEmpresa/calendar.png";
+import sidevarImage from "../../../../public/intratimeEmpresa/sidevar.png";
+import employeeAbsencesImage from "../../../../public/intratimeEmpresa/employeeAbsences.png";
+import clockingsByemployeeImage from "../../../../public/intratimeEmpresa/clockingsByemployee.png";
 import { useTranslations } from "next-intl";
 
 export const IntratimeEmpresa = () => {
