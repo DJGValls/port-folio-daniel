@@ -13,8 +13,8 @@ function Contact() {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <AiOutlineMessage className="text-9xl text-yellow-300 mb-4" />
-                    <p className="text-center text-bunker-200 max-w-md">{t("text1")}</p>
-                    <p className="text-center text-bunker-200 max-w-md">{t("text2")}</p>
+                    <p className="text-center text-white max-w-md">{t("text1")}</p>
+                    <p className="text-center text-white max-w-md">{t("text2")}</p>
                 </div>
             </div>
         </CustomCard>

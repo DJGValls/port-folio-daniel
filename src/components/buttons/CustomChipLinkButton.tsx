@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Chip, SvgIconProps } from "@mui/material";
 import Link from "next/link";
 import React from "react";
@@ -17,20 +17,31 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
     const IconComponent = Icon ? <Icon /> : undefined;
 
     const handleClick = (event: React.MouseEvent) => {
-        event.preventDefault();
-        setTimeout(() => {
-            window.open(href, '_blank', 'noopener,noreferrer');
-        }, 600);
+        if (href?.includes(".pdf")) {
+            // Para archivos PDF en la carpeta public
+            const link = document.createElement("a");
+            link.href = href;
+            link.download = href.split("/").pop() || "CV-Daniel-Jimenez-Gallego-2024.pdf";
+            link.click();
+            return false;
+        } else {
+            // Para links externos
+            setTimeout(() => {
+                window.open(href, "_blank", "noopener,noreferrer");
+            }, 600);
+        }
     };
 
     return (
         <Chip
-            href={href ? href : "#"}
+            href={href && !href.includes(".pdf") ? href : "#"}
             component="a"
             label={label}
             icon={IconComponent ?? undefined}
             clickable
             onClick={handleClick}
+            target={href && !href.includes(".pdf") ? "_blank" : undefined}
+            rel="noopener noreferrer"
             sx={{
                 border: "1px solid rgba(253, 224, 71, 0.5)",
                 color: "white",
@@ -38,7 +49,7 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
                 "& .MuiChip-icon": {
                     fontSize: "1.8rem", // Aumenta el tamaño del icono
                     marginRight: "5px", // Ajusta el margen del icono
-                    color: "var(--primary)"
+                    color: "var(--primary)",
                 },
                 "& .MuiChip-label": {
                     padding: "0 12px", // Aumenta el padding del texto

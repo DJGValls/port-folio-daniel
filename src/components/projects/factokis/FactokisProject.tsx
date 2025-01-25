@@ -52,7 +52,7 @@ export const FactokisProject = () => {
         <>
             <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
                 <div>
-                    <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
+                    <h5 className="text-white font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
                         <span>{t("title")}</span>
                         <IconButton
                             key="factokis"
@@ -70,7 +70,7 @@ export const FactokisProject = () => {
                     </h5>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg text-bunker-300">{t("title2")}</h3>
+                            <h3 className="text-lg text-white">{t("title2")}</h3>
                         </div>
                         <div className="space-y-4">
                             <p>{t("text1")}</p>

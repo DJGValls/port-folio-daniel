@@ -23,11 +23,9 @@ function CustomHome() {
                 className="image-container-home rounded-full mb-8 h-48 w-48 lg:h-64 lg:w-64 md:h-52 md:w-52 object-cover"
                 onError={(e) => console.error("Error loading image:", e)}
             />
-            <h1 className="mb-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-bunker-100">
-                Daniel Jiménez
-            </h1>
+            <h1 className="mb-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">Daniel Jiménez</h1>
 
-            <p className="text-bunker-300 text-lg md:text-xl lg:text-2xl">
+            <p className="text-white text-lg md:text-xl lg:text-2xl">
                 {t("textInfoPosition")}
                 <span className="text-yellow-300/80 "> {t("textInfoExperience")}</span> {t("textInfoResume")}
             </p>
@@ -39,7 +37,7 @@ function CustomHome() {
                     label="LinkedIn"
                     icon={LinkedInIcon}
                 />
-                <CustomChipLinkButton href="/resume.pdf" label="Curriculum" icon={ListAltIcon} />
+                <CustomChipLinkButton href="/CV-Daniel-Jimenez-Gallego-2024.pdf" label="Curriculum" icon={ListAltIcon} />
             </div>
         </div>
     );

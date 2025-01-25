@@ -70,7 +70,13 @@ function CustomNavbar(props: CustomNavbarProps) {
                         }}
                         sx={{
                             width: "100%",
-                            height: "100px",
+                            height: {
+                                xs: "70px",    // móviles
+                                sm: "80px",    // tablets pequeñas
+                                md: "90px",   // tablets
+                                lg: "100px",   // desktop
+                            },
+                            borderBottom: "1px solid rgba(253, 224, 71, 0.2)",
                             backgroundColor: "var(--background)", // Fondo negro con transparencia
                             backdropFilter: "blur(8px)", // Efecto de difuminado
                             display: "flex",

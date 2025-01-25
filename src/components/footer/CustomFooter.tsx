@@ -12,16 +12,25 @@ function CustomFooter() {
                 position: "fixed",
                 bottom: 0,
                 width: "100%",
+                height: {
+                    xs: "70px",    // móviles
+                    sm: "80px",    // tablets pequeñas
+                    md: "90px",   // tablets
+                    lg: "100px",   // desktop
+                },
                 backgroundColor: "var(--background)",
                 backdropFilter: "blur(8px)",
-                borderTop: "1px solid rgba(253, 224, 71, 0.2)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 zIndex: 30,
+                borderTop: "1px solid rgba(253, 224, 71, 0.2)",
             }}>
-            <div className="container mx-auto flex flex-wrap justify-between items-center p-8">
-                <p className="w-full lg:w-fit text-sm text-center lg:text-left text-bunker-200">
+            <div className="container mx-auto flex flex-wrap justify-between items-center p-2 sm-4 md-6 lg-8">
+                <p className="w-full lg:w-fit text-sm text-center lg:text-left text-white">
                     {t("footerText")}
                 </p>
-                <div className="w-full lg:w-fit justify-center mt-8 lg:mt-0 flex space-x-6">
+                <div className="w-full lg:w-fit justify-center items-center flex space-x-4 sm:space-x-6">
                     {[
                         { icon: AiFillGithub, href: "https://github.com/DJGValls" },
                         { icon: AiFillLinkedin, href: "https://www.linkedin.com/in/daniel-j-g" },
