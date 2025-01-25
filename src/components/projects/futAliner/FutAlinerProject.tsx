@@ -73,7 +73,7 @@ export const FutAlinerProject = () => {
                             <h3 className="text-lg text-white">{t("title2")}</h3>
                         </div>
                         <div className="space-y-4">
-                            <p>{t("text1")}</p>
+                            <p className="text-white">{t("text1")}</p>
                             <h6 className="font-medium text-yellow-300/80">{t("subTitle1")}</h6>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>{t("subTitle1-point1")}</li>

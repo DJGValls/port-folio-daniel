@@ -53,7 +53,7 @@ export const PortfolioProject = () => {
                     </h5>
                     <div className="space-y-6">
                         <div className="space-y-4 mt-4">
-                            <p>{t("text1")}</p>
+                            <p className="text-white">{t("text1")}</p>
 
                             <h6 className="font-medium text-yellow-300/80">{t("subTitle1")}</h6>
                             <div className="flex flex-wrap gap-2">

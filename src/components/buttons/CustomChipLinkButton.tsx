@@ -1,10 +1,7 @@
 "use client";
 import { Chip, SvgIconProps } from "@mui/material";
-import Link from "next/link";
 import React from "react";
 import { IconType } from "react-icons";
-import { BiLinkExternal } from "react-icons/bi";
-import { FaAccessibleIcon } from "react-icons/fa";
 
 type CustomChipLinkButtonProps = {
     label: string;

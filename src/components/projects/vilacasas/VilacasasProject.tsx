@@ -24,7 +24,7 @@ export const VilacasasProject = () => {
                         {/* <BiLinkExternal className="transition-transform ml-2 group-hover/item:translate-x-2 group-hover/item:-translate-y-2" /> */}
                     </h5>
                     <div className="mt-2 space-y-6">
-                        <p>{t("text1")}</p>
+                        <p className="text-white">{t("text1")}</p>
 
                         <div className="space-y-4">
                             <h6 className="font-medium text-yellow-300/80">{t("subTitle1")}</h6>

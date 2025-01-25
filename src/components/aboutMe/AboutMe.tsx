@@ -24,9 +24,9 @@ function AboutMe(props: AboutMeProps) {
         <CustomCard title={t("title")} id="about">
             <div className="w-full lg:w-1/2 lg:pl-4 lg:pr-12">
                 <div className="mt-8 space-y-6">
-                    <p>{t("text1")}</p>
-                    <p>{t("text2")}</p>
-                    <p>
+                    <p className="text-white">{t("text1")}</p>
+                    <p className="text-white">{t("text2")}</p>
+                    <p className="text-white">
                         <a
                             href={`/${lang}/projects`}
                             className="text-yellow-300/80 hover:text-yellow-300  decoration-2 underline-offset-4 transition-colors duration-300 hover:drop-shadow-[0_0_0.3rem_#fde047]">
@@ -34,7 +34,7 @@ function AboutMe(props: AboutMeProps) {
                         </a>{" "}
                         {t("text3")}
                     </p>
-                    <p>{t("text4")}</p>
+                    <p className="text-white">{t("text4")}</p>
                 </div>
             </div>
             <div className="w-full lg:w-1/2 lg:pr-4 lg:pl-12">

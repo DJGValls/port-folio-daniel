@@ -108,8 +108,8 @@ export const IntratimeEmpresa = () => {
                             <h3 className="text-lg text-white">{t("subTitle1")}</h3>
                         </div>
                         <div className="space-y-4">
-                            <p>{t("text1")}</p>
-                            <p>{t("text2")}</p>
+                            <p className="text-white">{t("text1")}</p>
+                            <p className="text-white">{t("text2")}</p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>{t("subTitle1-point1")}</li>
                                 <li>{t("subTitle1-point2")}</li>

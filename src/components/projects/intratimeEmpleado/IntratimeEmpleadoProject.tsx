@@ -75,9 +75,9 @@ export const IntratimeEmpleadoProject = () => {
                             <h3 className="text-lg text-white">{t("subTitle1")}</h3>
                         </div>
                         <div className="space-y-4">
-                            <p>{t("text1")}</p>
-                            <p>{t("text2")}</p>
-                            <p>{t("text3")}</p>
+                            <p className="text-white">{t("text1")}</p>
+                            <p className="text-white">{t("text2")}</p>
+                            <p className="text-white">{t("text3")}</p>
                         </div>
 
                         <div>
