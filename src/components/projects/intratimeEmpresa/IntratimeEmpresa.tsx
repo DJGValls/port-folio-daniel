@@ -110,7 +110,7 @@ export const IntratimeEmpresa = () => {
                         <div className="space-y-4">
                             <p className="text-white">{t("text1")}</p>
                             <p className="text-white">{t("text2")}</p>
-                            <ul className="list-disc pl-6 space-y-2">
+                            <ul className="list-disc pl-6 space-y-2 text-white">
                                 <li>{t("subTitle1-point1")}</li>
                                 <li>{t("subTitle1-point2")}</li>
                                 <li>{t("subTitle1-point3")}</li>
@@ -120,7 +120,7 @@ export const IntratimeEmpresa = () => {
                                 <li>{t("subTitle1-point7")}</li>
                             </ul>
                             <h6 className="font-medium text-yellow-300/80">{t("subTitle2")}</h6>
-                            <ul className="list-disc pl-6 space-y-2">
+                            <ul className="list-disc pl-6 space-y-2 text-white">
                                 <li>{t("subTitle2-point1")}</li>
                                 <li>{t("subTitle2-point2")}</li>
                                 <li>{t("subTitle2-point3")}</li>
@@ -129,7 +129,7 @@ export const IntratimeEmpresa = () => {
                                 <li>{t("subTitle2-point6")}</li>
                             </ul>
                             <h6 className="font-medium text-yellow-300/80">{t("subTitle3")}</h6>
-                            <ul className="list-disc pl-6 space-y-2">
+                            <ul className="list-disc pl-6 space-y-2 text-white">
                                 <li>{t("subTitle3-point1")}</li>
                                 <li>{t("subTitle3-point2")}</li>
                                 <li>{t("subTitle3-point3")}</li>
@@ -145,7 +145,7 @@ export const IntratimeEmpresa = () => {
                                     "API - Laravel",
                                     "DB- MySQL",
                                 ].map((tech, index) => (
-                                    <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
+                                    <span key={index} className="px-3 py-1 text-white rounded-full text-sm">
                                         {tech}
                                     </span>
                                 ))}

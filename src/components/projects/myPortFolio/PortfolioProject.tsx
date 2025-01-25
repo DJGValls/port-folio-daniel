@@ -65,7 +65,7 @@ export const PortfolioProject = () => {
                                     "React Icons",
                                     "Formspree",
                                 ].map((tech, index) => (
-                                    <span key={index} className="px-3 py-1 bg-bunker-800 rounded-full text-sm">
+                                    <span key={index} className="px-3 py-1 text-white rounded-full text-sm">
                                         {tech}
                                     </span>
                                 ))}
