@@ -17,10 +17,11 @@ export const CustomCard = ({ children, title, id }: CustomCardProps) => {
                     <div className="w-[90%] md:w-[80%] lg:w-[85%] xl:w-[100%]">
                         <div
                             className="p-8 lg:p-12 rounded-xl bg-bunker-950/80 backdrop-blur-sm ring-2 ring-yellow-500/30  
-                                    hover:ring-yellow-500/50 transition-all duration-300  
-                                    before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-r  
-                                    before:from-yellow-500/5 before:to-transparent before:opacity-0  
-                                    hover:before:opacity-100 before:transition-opacity ">
+                            lg:hover:ring-yellow-500/50 transition-all duration-300  
+                            before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-r  
+                            before:from-yellow-500/5 before:to-transparent before:opacity-100  
+                            lg:before:opacity-0  
+                            lg:hover:before:opacity-100 before:transition-opacity ">
                             <div className="relative z-10 flex flex-wrap">{children}</div>
                         </div>
                     </div>
