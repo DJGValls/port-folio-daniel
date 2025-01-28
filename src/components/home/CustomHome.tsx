@@ -37,7 +37,11 @@ function CustomHome() {
                     label="LinkedIn"
                     icon={LinkedInIcon}
                 />
-                <CustomChipLinkButton href="/CV-Daniel-Jimenez-Gallego-2024.pdf" label="Curriculum" icon={ListAltIcon} />
+                <CustomChipLinkButton
+                    href="https://res.cloudinary.com/dn3vdudid/image/upload/v1738081922/CV-Daniel-Jimenez-Gallego-2024_luaqac.pdf"
+                    label="Curriculum"
+                    icon={ListAltIcon}
+                />
             </div>
         </div>
     );

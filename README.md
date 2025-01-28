@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Portfolio Personal - Daniel Jiménez
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Características Principales
+
+### 1. Multilingüe
+- Soporte para tres idiomas: Español, Catalán e Inglés
+- Implementación con `next-intl`
+- Cambio dinámico de idioma sin recargar la página
+
+### 2. Navegación y Diseño
+- Navegación fluida entre secciones con animaciones suaves
+- Diseño responsive adaptado a diferentes dispositivos
+- Barra de navegación fija con iconos animados
+- Fondo dinámico con efecto de partículas
+
+### 3. Secciones Principales
+
+#### 🏠 Home
+- Presentación personal con imagen
+- Enlaces directos a redes sociales
+- Descarga de CV en PDF
+
+#### 👤 Sobre Mí
+- Descripción profesional detallada
+- Showcase de habilidades técnicas
+- Grid interactivo de tecnologías dominadas
+
+#### 💼 Proyectos
+- Galería de proyectos profesionales
+- Descripción detallada de cada proyecto
+- Tecnologías utilizadas
+- Enlaces a demos cuando están disponibles
+
+#### 📧 Contacto
+- Formulario de contacto funcional
+- Validación de campos en tiempo real
+- Integración con Formspree
+- Feedback visual de envío
+
+### 4. Características Técnicas
+
+#### Frontend
+- Next.js 14
+- TypeScript
+- Material-UI
+- Tailwind CSS
+- Framer Motion para animaciones
+
+#### Herramientas y Utilidades
+- React Hook Form para formularios
+- Zod para validaciones
+- Sharp para optimización de imágenes
+- Cloudinary para almacenamiento de assets
+
+## 🛠️ Tecnologías Utilizadas
+```json
+{
+  "Framework": "Next.js 14",
+  "Lenguaje": "TypeScript",
+  "Estilos": ["Tailwind CSS", "Material-UI"],
+  "Animaciones": "Framer Motion",
+  "Internacionalización": "next-intl",
+  "Formularios": ["React Hook Form", "Formspree"],
+  "Optimización": ["Sharp", "Cloudinary"]
+}
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

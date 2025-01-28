@@ -9,11 +9,18 @@ const nextConfig = {
     //     domains: [],
     // }
     images: {
-        remotePatterns: [],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                pathname: '/**',
+            }
+        ],
         dangerouslyAllowSVG: true,
         contentDispositionType: 'attachment',
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     }
+    
 };
 
 export default withNextIntl(nextConfig);

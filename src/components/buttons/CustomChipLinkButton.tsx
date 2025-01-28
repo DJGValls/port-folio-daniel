@@ -1,6 +1,6 @@
 "use client";
-import { Chip, SvgIconProps } from "@mui/material";
-import React from "react";
+import { Chip, CircularProgress, SvgIconProps } from "@mui/material";
+import React, { useState } from "react";
 import { IconType } from "react-icons";
 
 type CustomChipLinkButtonProps = {
@@ -13,14 +13,28 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
     const { href, label, icon: Icon } = props;
     const IconComponent = Icon ? <Icon /> : undefined;
 
-    const handleClick = (event: React.MouseEvent) => {
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleClick = async (event: React.MouseEvent) => {
         if (href?.includes(".pdf")) {
-            // Para archivos PDF en la carpeta public
-            const link = document.createElement("a");
-            link.href = href;
-            link.download = href.split("/").pop() || "CV-Daniel-Jimenez-Gallego-2024.pdf";
-            link.click();
-            return false;
+            // Para archivos PDF en Cloudinary
+            setIsLoading(true);
+            try {
+                const response = await fetch(href);
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = "CV-Daniel-Jimenez-Gallego-2024.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                window.URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error("Error downloading PDF:", error);
+            } finally {
+                setIsLoading(false);
+            }
         } else {
             // Para links externos
             setTimeout(() => {
@@ -34,7 +48,9 @@ function CustomChipLinkButton(props: CustomChipLinkButtonProps) {
             href={href && !href.includes(".pdf") ? href : "#"}
             component="a"
             label={label}
-            icon={IconComponent ?? undefined}
+            disabled={isLoading}
+            // icon={IconComponent ?? undefined}
+            icon={isLoading ? <CircularProgress size={20} color="inherit" /> : IconComponent ?? undefined}
             clickable
             onClick={handleClick}
             target={href && !href.includes(".pdf") ? "_blank" : undefined}
