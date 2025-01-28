@@ -6,9 +6,7 @@ import CustomFooter from "@/components/footer/CustomFooter";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { locales } from "../../../middlewares/locale.middleware";
-import { routing } from "../../../i18n/routing";
 import { getMessages } from "next-intl/server";
-import TransitionLayout from "@/components/transitions/TransitionLayout";
 import TransitionHeader from "@/components/transitions/TransitionHeader";
 import TransitionFooter from "@/components/transitions/TransitionFooter";
 import { DeserParticlesBackground } from "@/components/background/DesertWindParticlesBackground";
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
     title,
     description,
     keywords: ["Programador", "Desarrollador", "Daniel Jiménez Gallego", "Web", "Full-Stack", "FullStack"],
-    metadataBase: new URL("https://www.DanielJiGa.dev"),
+    metadataBase: new URL("https://port-folio-daniel-pi.vercel.app/"),
     alternates: {
         canonical: "/",
     },

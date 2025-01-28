@@ -39,7 +39,7 @@ export const PortfolioProject = () => {
                     <h5 className="text-white font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
                         <span>{t("title")}</span>
                         <IconButton
-                            href="https://tu-portfolio.dev"
+                            href="https://port-folio-daniel-pi.vercel.app/en/home"
                             target="_blank"
                             sx={{
                                 color: "#CBD5E1",
